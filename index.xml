@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Juan Castro</title>
-    <link>https://juan-blog.github.io./</link>
+    <link>https://juan-blog.github.io/</link>
     <description>Recent content on Juan Castro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     
-	<atom:link href="https://juan-blog.github.io./index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juan-blog.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3 meses sin Google en mi Android, ¿Cómo han sido?</title>
-      <link>https://juan-blog.github.io./post/no-google/</link>
+      <link>https://juan-blog.github.io/post/no-google/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io./post/no-google/</guid>
+      <guid>https://juan-blog.github.io/post/no-google/</guid>
       <description>El 17 de abril, hace aproximadamente 3 meses, decidí instalar LineageOS 14 en mi smartphone, un humilde Samsung Core 2 que la comunidad ha mantenido vivo para llevar a él Android 7, a pesar que Samsung lo dejó en Android 4.4.2. Durante la instalación decidí no instalar las Gapps, las aplicaciones de Google con el fin de ahorrar (mucho) espacio y recursos, además de experimentar la vida sin Google, esto antes que el tema fuera puesto en al mesa por Huawei.</description>
     </item>
     
     <item>
       <title>5 ideas equivocadas acerca de Emacs</title>
-      <link>https://juan-blog.github.io./post/5-ideas-emacs/</link>
+      <link>https://juan-blog.github.io/post/5-ideas-emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io./post/5-ideas-emacs/</guid>
+      <guid>https://juan-blog.github.io/post/5-ideas-emacs/</guid>
       <description>Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por org-mode, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como Magit.  A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales Emacs es un mal editor de texto.</description>
     </item>
     
     <item>
       <title>Alternativas libres en Android a las aplicaciones más comunes</title>
-      <link>https://juan-blog.github.io./post/alternativas-android/</link>
+      <link>https://juan-blog.github.io/post/alternativas-android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io./post/alternativas-android/</guid>
+      <guid>https://juan-blog.github.io/post/alternativas-android/</guid>
       <description>La primer pregunta cuando que le pasa por la cabeza a las personas si les dicen que abandonen Google y sus servicios en su celular es &amp;#34;¿y cómo voy a hacer &amp;lt;inserte tarea&amp;gt;, si no podré usar esa aplicación?&amp;#34;. Afortunadamente hay muchas alternativas libres, disponibles en F-droid o en repositorios individuales para las aplicaciones más comunes (y otras no tanto), así que a continuación dejaré una recopilación de las mejores aplicaciones que yo he probado con las cuales no se extrañará casi nada a Google.</description>
     </item>
     
     <item>
       <title>Como planeo mis clases utilizando Emacs y Org-mode sin morir en el intento... aún</title>
-      <link>https://juan-blog.github.io./post/planeacion-emacs/</link>
+      <link>https://juan-blog.github.io/post/planeacion-emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io./post/planeacion-emacs/</guid>
+      <guid>https://juan-blog.github.io/post/planeacion-emacs/</guid>
       <description>Cómo usuario de Emacs he tratado de llevar su uso a la mayoría de los aspectos de mi vida, y uno donde no podía faltar era, por supuesto, en mi trabajo. Como profesor de matemáticas, una de las principales tareas que realizo es planear mis clases, así que dediqué un tiempo en construir un sistema que me permitiera planear mis clases, llevar control sobre ellas y presentar mis planeaciones en un formato legible para el humano promedio.</description>
     </item>
     
     <item>
       <title>Instalando un Window Manager minimalista. ¿Qué aplicaciones debería instalar?</title>
-      <link>https://juan-blog.github.io./post/apps-wm/</link>
+      <link>https://juan-blog.github.io/post/apps-wm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io./post/apps-wm/</guid>
+      <guid>https://juan-blog.github.io/post/apps-wm/</guid>
       <description>Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las características de un entorno de Escritorio completo, como lo son un panel/barra de tareas, explorador de archivos, o incluso un cajón de aplicaciones, suelen brillar por su ausencia en estas instalaciones, dejando en manos del usuario decidir que aplicaciones descargar.</description>
     </item>
     
