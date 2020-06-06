@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Instalando un Window Manager minimalista. ¿Qué aplicaciones debería instalar? - Juan Castro</title>
+  <meta name="description" content="Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las características de un entorno de Escritorio completo, como lo son un panel/barra de tareas, explorador de archivos, o incluso un cajón de aplicaciones, suelen brillar por su ausencia en estas instalaciones, dejando en manos del usuario decidir que aplicaciones descargar."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Juan Castro",
+    
+    "url": "\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "\/post\/apps-wm\/",
+          "name": "Instalando un window manager minimalista. ¿ qué aplicaciones debería instalar?"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "Instalando un Window Manager minimalista. ¿Qué aplicaciones debería instalar?",
+  "description" : "Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las características de un entorno de Escritorio completo, como lo son un panel\/barra de tareas, explorador de archivos, o incluso un cajón de aplicaciones, suelen brillar por su ausencia en estas instalaciones, dejando en manos del usuario decidir que aplicaciones descargar.",
+  "inLanguage" : "es",
+  "wordCount":  1667 ,
+  "datePublished" : "0001-01-01T00:00:00",
+  "dateModified" : "0001-01-01T00:00:00",
+  "image" : "\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "\/post\/apps-wm\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Instalando un Window Manager minimalista. ¿Qué aplicaciones debería instalar?" />
+<meta property="og:description" content="Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las características de un entorno de Escritorio completo, como lo son un panel/barra de tareas, explorador de archivos, o incluso un cajón de aplicaciones, suelen brillar por su ausencia en estas instalaciones, dejando en manos del usuario decidir que aplicaciones descargar.">
+<meta property="og:url" content="/post/apps-wm/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Juan Castro" />
+
+  <meta name="twitter:title" content="Instalando un Window Manager minimalista. ¿Qué aplicaciones debería …" />
+  <meta name="twitter:description" content="Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.72.0" />
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Juan Castro"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="/css/highlight.min.css" /><link rel="stylesheet" href="/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Conmuta navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Juan Castro</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Acerca" href="/acerca">Acerca</a>
+            </li>
+          
+        
+
+        
+          
+            <li>
+              
+                
+                  <a href="/en" lang="en">en</a>
+                
+              
+                
+              
+            </li>
+          
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Instalando un Window Manager minimalista. ¿Qué aplicaciones debería instalar?</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Publicado el 1 de enero, 0001
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+<p>
+Instalé un Window Manager minimalista. ¿Ahora qué? Esa es una pregunta que muchos usuarios se hacen al instalar una WM como Openbox, i3 o bspwm, que solamente muestran ventanas y poco más. Las características de un entorno de Escritorio completo, como lo son un panel/barra de tareas, explorador de archivos, o incluso un cajón de aplicaciones, suelen brillar por su ausencia en estas instalaciones, dejando en manos del usuario decidir que aplicaciones descargar. El problema es que, en algunas ocasiones, no sabemos que aplicaciones usar, o las que estamos acostumbrados pertenecen a entornos de escritorio completos y no funcionan de manera independiente.
+</p>
+<p>
+Debido a lo anterior es que he decidido plasmar algo de mi experiencia en el uso de Window Managers y listar algunas de las aplicaciones que personalmente recomiendo y uso diariamente, así si alguien desea migrar de un entorno de escritorio a un gestor de ventanas en solitario, puede basarse en este escrito para decidir que aplicaciones instalar. Trataré de listar aquellos programas que ayudan a completar una interfaz de escritorio, así como otras aplicaciones que considero quedan bastante bien con entornos minimalistas y basan su funcionamiento principalmente en el uso del teclado, así como también el hipervínculo que mande a una web con información sobre la aplicación (el README en github o una entrada en la wiki de Arch) en lugar de un enlace para descargar, puesto que la mayoría está disponible en los repos de las distros más populares.
+</p>
+<h4 id="headline-1">
+Panel
+</h4>
+<h7 id="headline-2">
+<a href="https://github.com/polybar/polybar/">Polybar</a> 
+</h7>
+<p>
+Uno de los paneles más populares, permite utilizar diferentes &#34;módulos&#34; para decidir que información mostrar. Además de los módulos incluidos se pueden crear nuevos que muestren la salida de un <em>script</em>, lo que lo vuelve sumamente poderoso en mi opinión sin dejar de lado la simpleza de uso. Incorpora una serie de módulos para mostrar la información que deseamos (incluidos los escritorios de i3 y bspwm), una bandeja del sistema y en su wiki podemos encontrar una variedad de scrips creados por la comunidad.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" />
+</p>
+<h7 id="headline-3">
+<a href="https://gitlab.com/o9000/tint2">Tint2</a> 
+</h7>
+<p>
+Un problema, si se le quiere ver así, de polybar es que la configuración se hace mediante un archivo de texto. tint2 parece solucionar ese problema incorporando una interfaz gráfica para editar y crear temas, pero a la vez es un panel bastante completo incorporando una gran cantidad de módulos que se pueden personalizar desde el color hasta el tipo de información que muestran. Aunque debo decir que es algo más limitado que polybar, este panel posee un &#34;botón de tareas&#34; que permite mostrar las aplicaciones abiertas e interactuar con ellas, mientras que polybar no, volviéndolo perfecto para stacking window managers como Openbox o Berry.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/TAkz6vQkgg5WzqiZuwm7vliILWFphY67YQARu9Ww.png" />
+</p>
+<h7 id="headline-4">
+<a href="https://sourceforge.net/projects/lxde/files/LXPanel%20(desktop%20panel)/">lxpanel</a>
+</h7>
+<p>
+El panel que incorpora el entorno LXDE pero que es totalmente independiente, incorpora un menú, botones de ventanas, bandeja y es personalizable para dejarlo al gusto de cada quien.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/GHxGWYojXELsdlbHPXP4irshKUFBmYuGUZlU5zDB.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/GHxGWYojXELsdlbHPXP4irshKUFBmYuGUZlU5zDB.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/GHxGWYojXELsdlbHPXP4irshKUFBmYuGUZlU5zDB.png" />
+</p>
+<h4 id="headline-5">
+Lanzador de aplicaciones
+</h4>
+<h7 id="headline-6">
+<a href="https://wiki.archlinux.org/index.php/Dmenu">dmenu</a>
+</h7>
+<p>
+Dmenu no es un lanzador de aplicaciones, en realidad es un menú dinámico; para no explayarme mucho, básicamente podemos enrutar varias lineas a dmenu y, en un menú gráfico seleccionar una, la selección se imprime en STDOUT. Muy útil para scripts (yo mismo tengo una serie de scripts que usan dmenu), incluye un script llamado <code>dmenu_run</code> el cual muestra todas las aplicaciones instaladas, permitiendo usarlo como lanzador de aplicaciones. 
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/afR3Lhb4go4JLsWnNFaEz8koTj3mn0UQjbyB76cl.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/afR3Lhb4go4JLsWnNFaEz8koTj3mn0UQjbyB76cl.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/afR3Lhb4go4JLsWnNFaEz8koTj3mn0UQjbyB76cl.png" />
+</p>
+<h7 id="headline-7">
+<a href="https://github.com/enkore/j4-dmenu-desktop">j4-desktop</a>
+</h7>
+<p>
+<code>dmenu_run</code> tiene un problema: muestra todos los binarios instalados en el equipo, esto incluye cantidad de utilidades en línea de comandos, librerias y aplicaciones por su nombre binario y no su nombre común (&#34;lowriter&#34; en lugar de &#34;Libre Office Writer&#34;). j4-desktop soluciona esto mostrando solamente aquellos paquetes con un archivo .desktop en un menú de dmenu. Es posible modificar los parámetros de dmenu para personalizarlo un poco.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lk1EQPyWfmrwJiRMAxRvYNGgIVUK0ZHApwZJ5HZb.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lk1EQPyWfmrwJiRMAxRvYNGgIVUK0ZHApwZJ5HZb.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lk1EQPyWfmrwJiRMAxRvYNGgIVUK0ZHApwZJ5HZb.png" />
+</p>
+<h7 id="headline-8">
+<a href="https://github.com/davatorium/rofi">Rofi</a>
+</h7>
+<p>
+Rofi permite no solo lanzar las aplicaciones instaladas, sino también cambiar entre ventanas abiertas e incluso puede reemplazar a dmenu como menú dinámico. Rofi es mucho más personalizable que dmenu, permitiendo crear temas complejos y llamativos.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/e5ToT2TSsbq8AE9y4oyA1NewgBoqMJX2QJaTSvRf.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/e5ToT2TSsbq8AE9y4oyA1NewgBoqMJX2QJaTSvRf.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/e5ToT2TSsbq8AE9y4oyA1NewgBoqMJX2QJaTSvRf.png" />
+</p>
+<h4 id="headline-9">
+Sistema
+</h4>
+<h7 id="headline-10">
+<a href="https://wiki.archlinux.org/index.php/Nitrogen">Nitrogen</a>
+</h7>
+<p>
+Una aplicación para elegir un fondo de pantalla. Es muy sencilla de usar y basta con elegir en la interfaz gráfica la carpeta de los Wallapaper y elegir uno. Incluye opciones para la línea de comandos también.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lnJGwTabNSiNp5iMwEM79JegW4GgyaRxLax6WxUM.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lnJGwTabNSiNp5iMwEM79JegW4GgyaRxLax6WxUM.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/lnJGwTabNSiNp5iMwEM79JegW4GgyaRxLax6WxUM.png" />
+</p>
+<h7 id="headline-11">
+<a href="https://github.com/yshui/picom">picom</a>
+</h7>
+<p>
+Picom es un compositor de ventanas, fork de Compton. Permite agregar sombras, transparencias y animaciones simples a las ventanas, pero la utilidad más importante es la de reducir el tearing presente en varios gestores de ventanas.
+</p>
+<h7 id="headline-12">
+<a href="https://lubuntu.me/lxappearance/">lxappearance</a>
+</h7>
+<p>
+Esta aplicación permitirá cambiar el tema GTK+, el paquete de íconos, el tipo de fuente que usará el sistema y el tema del cursor. Originalmente desarrollado para usarse en el entorno de escritorio LXDE funciona perfectamente fuera de él.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Y1Z5D1kZ4nzl3YTCbvOztsr0jDVe6aNlUioYkQhu.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Y1Z5D1kZ4nzl3YTCbvOztsr0jDVe6aNlUioYkQhu.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Y1Z5D1kZ4nzl3YTCbvOztsr0jDVe6aNlUioYkQhu.png" />
+</p>
+<h7 id="headline-13">
+<a href="https://wiki.archlinux.org/index.php/Qt#Tools">qt5ct</a>
+</h7>
+<p>
+No todas las aplicaciones que usamos son GTK, varias usan las librerías Qt, y para poder modificar su apariencia es necesario usar qt5ct. Desde esta pequeña aplicación se puede cambiar el tema y la apariencia de las aplicaciones Qt. Recomiendo usar el estilo GTK para que las ventanas GTK y las ventanas Qt se vean uniformes.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/ojBNqMaEcRokfh8hEVpn0yO9LTQ0f4l9Ln29R0AY.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/ojBNqMaEcRokfh8hEVpn0yO9LTQ0f4l9Ln29R0AY.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/ojBNqMaEcRokfh8hEVpn0yO9LTQ0f4l9Ln29R0AY.png" />
+</p>
+<h7 id="headline-14">
+<a href="https://wiki.archlinux.org/index.php/PulseAudio">PulseAudio</a> y Pavucontrol
+</h7>
+<p>
+Para poder escuchar algo en nuestros sistemas necesitamos instalar e iniciar el servidor de PulseAudio. Pavucontrol nos permitirá cambiar el volumen y las salidas y entradas de audio.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/06XcWt8mB8vBpO8apbyysmWeVRtvNGnqadEK0Czb.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/06XcWt8mB8vBpO8apbyysmWeVRtvNGnqadEK0Czb.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/06XcWt8mB8vBpO8apbyysmWeVRtvNGnqadEK0Czb.png" />
+</p>
+<h7 id="headline-15">
+<a href="https://wiki.archlinux.org/index.php/Dunst">Dunst</a>
+</h7>
+<p>
+Dunst es un servidor de notificaciones que permite mostrar las notificaciones que envíen las aplicaciones. Es posible enviar notificaciones mediante <code>notify-send</code> incluido en el paquete <code>libnotify</code> y enviar notificaciones personalizadas. El aspecto de dunst se puede personalizar mediante un archivo de configuración.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/sC4qAxF1QEj0OkKXfvixq6gBsfFjkMzu15KpvJlz.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/sC4qAxF1QEj0OkKXfvixq6gBsfFjkMzu15KpvJlz.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/sC4qAxF1QEj0OkKXfvixq6gBsfFjkMzu15KpvJlz.png" />
+</p>
+<h7 id="headline-16">
+<a href="https://wiki.archlinux.org/index.php/NetworkManager">nm-applet</a>
+</h7>
+<p>
+nm-applet funciona como un ícono en la bandeja del sistema para ver y administrar las conexiones de internet. Muy útil para agregar redes wifi o simplemente confirmar que se esté conectado al internet. Una ventana más compleja aparece como opciones avanzadas que permite una administración algo más profunda.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/wAbYSwQlqhXkD0WX5X8NHjNTpMtGZRKJfMf4AyK4.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/wAbYSwQlqhXkD0WX5X8NHjNTpMtGZRKJfMf4AyK4.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/wAbYSwQlqhXkD0WX5X8NHjNTpMtGZRKJfMf4AyK4.png" />
+</p>
+<h7 id="headline-17">
+<a href="https://github.com/firecat53/networkmanager-dmenu">networkmanager-dmenu</a>
+</h7>
+<p>
+Una alternativa para nm-applet que utiliza dmenu para mostrar las opciones de conexión disponibles. Permite una administración básica de las redes disponibles mientras que una interfaz más completa se ofrece mediante nm-applet.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/90RilH01NfgXYzQZJfvMMU5scCt7ryZM1NgqyJnw.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/90RilH01NfgXYzQZJfvMMU5scCt7ryZM1NgqyJnw.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/90RilH01NfgXYzQZJfvMMU5scCt7ryZM1NgqyJnw.png" />
+</p>
+<h7 id="headline-18">
+<a href="https://github.com/CristianHenzel/ClipIt">ClipIt</a>
+</h7>
+<p>
+Un gestor del portapapeles sencillo que vive en la bandeja del sistema. Posee un historial de lo que se ha copiado y permite administrar todo el texto que se copie al portapapeles.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/1NGKpaI5DqFJazcD6uUKsNQyY672z4jCg9xXAgaj.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/1NGKpaI5DqFJazcD6uUKsNQyY672z4jCg9xXAgaj.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/1NGKpaI5DqFJazcD6uUKsNQyY672z4jCg9xXAgaj.png" />
+</p>
+<h7 id="headline-19">
+<a href="http://nullwise.com/volumeicon.html">Volumeicon</a>
+</h7>
+<p>
+Un sencillo applet para la bandeja del sistema que permite ver el volumen, incluye unas cuantas opciones de personalización, como usar las teclas de volumen para controlar el applet.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/bQWhEtWyd71YYI72OYbPrgyJz0Aq5QF4DkKJXuFG.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/bQWhEtWyd71YYI72OYbPrgyJz0Aq5QF4DkKJXuFG.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/bQWhEtWyd71YYI72OYbPrgyJz0Aq5QF4DkKJXuFG.png" />
+</p>
+<h7 id="headline-20">
+<a href="https://en.wikipedia.org/wiki/Scrot">Scrot</a>
+</h7>
+<p>
+Siempre viene útil tomar una captura de pantalla, y para ello podemos usar Scrot, una utilidad CLI para tomar capturas de pantalla. Es muy simple y sencilla pero posee algunos comandos como retrasar la captura.
+</p>
+<h7 id="headline-21">
+<a href="https://flameshot.js.org/#/">Flameshot</a>
+</h7>
+<p>
+Si scrot es muy simple, entonces Flameshot es la aplicación que buscamos. Permite elegir la zona a la que se le tomará captura, escribir sobre la captura antes de tomarla e incluso subirla a imgur.
+<img src="https://flameshot.js.org/_media/animatedUsage.gif" alt="https://flameshot.js.org/_media/animatedUsage.gif" title="https://flameshot.js.org/_media/animatedUsage.gif" />
+</p>
+<h4 id="headline-22">
+Otros
+</h4>
+<p>
+Aquí incluyo una selección de aquellas aplicaciones que, en mi consideración, funcionan bien fuera de entornos de escritorio completos, y quedan bien en entornos minimalistas que se usan principalmente con el teclado.
+</p>
+<h7 id="headline-23">
+<a href="https://wiki.archlinux.org/index.php/Thunar">Thunar</a>
+</h7>
+<p>
+El gestor de archivos de XFCE es uno, sino es que el mejor gestor de archivos para linux. Funciona sin problemas como un programa independiente y ofrece varias opciones interesantes como entradas personalizadas al menú de clic derecho, plugins y una interfaz moderna.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/d5prrYLLLKjk8LSToPNp6zVEeJTXQNoPqHjET0dz.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/d5prrYLLLKjk8LSToPNp6zVEeJTXQNoPqHjET0dz.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/d5prrYLLLKjk8LSToPNp6zVEeJTXQNoPqHjET0dz.png" />
+</p>
+<h7 id="headline-24">
+<a href="https://ranger.github.io/">Ranger</a>
+</h7>
+<p>
+Un gestor de archivos en terminal bastante completo, que incluye desde opciones avanzadas de búsquedas hasta previsualización de imágenes y comandos personalizados. Está escrito y configurado en Python, lo que lo vuelve sencillo pero poderoso a la vez.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/DAZzXvk7mOnR8Bot4ajmFet4tY6MewHbJPVnVQxe.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/DAZzXvk7mOnR8Bot4ajmFet4tY6MewHbJPVnVQxe.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/DAZzXvk7mOnR8Bot4ajmFet4tY6MewHbJPVnVQxe.png" />
+</p>
+<h7 id="headline-25">
+<a href="https://github.com/gokcehan/lf">lf</a>
+</h7>
+<p>
+Un clon de Ranger escrito en go, lo que lo vuelve más rápido que su original en Python, además incorpora opciones avanzadas como scripts personalizados dependiendo el tipo de archivo y atajos de teclado personalizados
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/itJ1qP8V5J6KqymdhGnaXWZ9J2uZtUJOaFGbIzdL.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/itJ1qP8V5J6KqymdhGnaXWZ9J2uZtUJOaFGbIzdL.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/itJ1qP8V5J6KqymdhGnaXWZ9J2uZtUJOaFGbIzdL.png" />
+</p>
+<h7 id="headline-26">
+<a href="https://github.com/jarun/nnn">nnn</a>
+</h7>
+<p>
+Un administrador de archivos muy rápido y sencillo, con una gran cantidad de plugins (scripts de bash) que lo hacen más útil aún. Es más minimalista que los anteriores pero igual de útil.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/n6gRcm8FRfFC4jAPdXB6NaHW2M66pQf7dzh2ybFy.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/n6gRcm8FRfFC4jAPdXB6NaHW2M66pQf7dzh2ybFy.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/n6gRcm8FRfFC4jAPdXB6NaHW2M66pQf7dzh2ybFy.png" />
+</p>
+<h7 id="headline-27">
+<a href="https://wiki.archlinux.org/index.php/Feh">feh</a>
+</h7>
+<p>
+Un visor de imágenes simple que dedica a hacer eso: visualizar imágenes. Es posible rotar y transformar las imágenes, así como colocarlas como fondo de pantalla, todo mediante atajos de teclado y sin ningún ícono o barra de herramientas innecesaria.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/pjhsRG95xXvdMGbaoyfuh9O8MW6Xu9hDuYzr2VOk.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/pjhsRG95xXvdMGbaoyfuh9O8MW6Xu9hDuYzr2VOk.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/pjhsRG95xXvdMGbaoyfuh9O8MW6Xu9hDuYzr2VOk.png" />
+</p>
+<h7 id="headline-28">
+<a href="https://wiki.archlinux.org/index.php/Sxiv">Sxiv</a>
+</h7>
+<p>
+Otro visor de imágenes simple, muy parecido a feh pero con opciones interesantes como ejecutar scripts a una imagen o ver todas las imágenes en una carpeta como galería.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/usBQ5oi7k7cYpsZ1MOeqjs2bGQ4KsBFskplpVHP1.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/usBQ5oi7k7cYpsZ1MOeqjs2bGQ4KsBFskplpVHP1.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/usBQ5oi7k7cYpsZ1MOeqjs2bGQ4KsBFskplpVHP1.png" />
+</p>
+<h7 id="headline-29">
+<a href="https://mpv.io/">mpv</a>
+</h7>
+<p>
+Mpv es un reproductor de videos muy sencillo en interfaz pero bastante poderoso. Incluye una interfaz de reproducción mínima y es compatible con una gran cantidad de formatos multimedia. Al igual que sxiv y feh, es posible controlarlo (y hay cosas que solo así se pueden lograr) totalmente mediante el teclado gracias a atajos personalizables.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/xJUg0KiS8dc5xzfjlTukuEU9ZrgGVwuJU52KfpzI.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/xJUg0KiS8dc5xzfjlTukuEU9ZrgGVwuJU52KfpzI.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/xJUg0KiS8dc5xzfjlTukuEU9ZrgGVwuJU52KfpzI.png" />
+</p>
+<h7 id="headline-30">
+<a href="https://wiki.archlinux.org/index.php/Zathura">Zathura</a>
+</h7>
+<p>
+Un lector de PDF y otros formatos minimalista. Permite leer documentos sin la distracción de barras de herramientas o menús innecesarios, es controlable mediante el teclado y es posible cambiar los atajos que se utilizan. Para que funcione es necesario instalar plugins extras dependiendo de los formatos que queramos leer.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/iFNJ8zVNxoz8USQQF3mItbmOE82oPervUP3Zm8HR.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/iFNJ8zVNxoz8USQQF3mItbmOE82oPervUP3Zm8HR.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/iFNJ8zVNxoz8USQQF3mItbmOE82oPervUP3Zm8HR.png" />
+</p>
+<h7 id="headline-31">
+<a href="https://wiki.archlinux.org/index.php/Ncmpcpp">Ncmpcpp</a>
+</h7>
+<p>
+NCurses Music Player Client Plus Plus (si, eso significa) es un cliente para <a href="https://wiki.archlinux.org/index.php/Music_Player_Daemon">MPD</a> que se ejecuta en terminal. Posee una enorme cantidad de opciones, desde ver la letra de las canciones hasta editar las etiquetas y generar visualizaciones. Es compatible también con <a href="https://mopidy.com/">mopidy</a>, lo que significa que podríamos escuchar Spotify desde ncmpcpp.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Cz4MD4sn9SkiCrIQjJEXmWk0zgc1oJizoElDjXvT.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Cz4MD4sn9SkiCrIQjJEXmWk0zgc1oJizoElDjXvT.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/Cz4MD4sn9SkiCrIQjJEXmWk0zgc1oJizoElDjXvT.png" />
+</p>
+<h7 id="headline-32">
+Terminal
+</h7>
+<p>
+Hay muchas terminales disponibles. Aquí no me siento confiado en recomendar una en específico ya que la mayoría son muy parecidas, diferenciándose en las opciones de personalización. Xterm, termite y urxvt son muy populares; st es la que uso pero su configuración requiere parchear y recompilar cada ocasión; xfce-terminal y lxterminal funcionan a la perfección sin su respectivo entorno. Lo que si no puedo recomendar son terminales como gnome-terminal o konsole, pues vienen con una gran cantidad de dependencias.
+</p>
+<h7 id="headline-33">
+Editor de texto
+</h7>
+<p>
+Nuevamente, esto es cuestión de gustos y no me atrevo a recomendar uno específico. Para tareas rápidas Mousepad y Nano son muy útiles, si se quiere un editor gráfico o en terminal, respectivamente. Para tareas más avanzadas quizá VIM o Emacs son más apropiados, o si se trabaja con código se prefiera trabajar con VSCode o algún otro IDE.
+<img src="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/MGwPqd8HICu3pKODvlIWGuKyJolUMMFRKYESWf5v.png" alt="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/MGwPqd8HICu3pKODvlIWGuKyJolUMMFRKYESWf5v.png" title="https://pixelfed.social/storage/m/3a6438b47665c0545d7d1dd23248088a371859e6/e267cbf98ba9486f9e7c8afbc2d1cfcd402a8965/MGwPqd8HICu3pKODvlIWGuKyJolUMMFRKYESWf5v.png" />
+</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+            <li class="next">
+              <a href="/post/planeacion-emacs/" data-toggle="tooltip" data-placement="top" title="Como planeo mis clases utilizando Emacs y Org-mode sin morir en el intento... aún">Artículo siguiente &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            0001
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="/">Juan Castro</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.72.0</a> alimentada &nbsp;&bull;&nbsp; Tema <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adaptado de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="/js/main.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
