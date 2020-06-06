@@ -3,68 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/no-google/</loc>
+    <loc>https://juan-blog.github.io./post/no-google/</loc>
   </url>
   
   <url>
-    <loc>/post/5-ideas-emacs/</loc>
+    <loc>https://juan-blog.github.io./post/5-ideas-emacs/</loc>
   </url>
   
   <url>
-    <loc>/post/alternativas-android/</loc>
+    <loc>https://juan-blog.github.io./post/alternativas-android/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://juan-blog.github.io./categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://juan-blog.github.io./en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/categories/"
+                href="https://juan-blog.github.io./categories/"
                 />
   </url>
   
   <url>
-    <loc>/post/planeacion-emacs/</loc>
+    <loc>https://juan-blog.github.io./post/planeacion-emacs/</loc>
   </url>
   
   <url>
-    <loc>/post/apps-wm/</loc>
+    <loc>https://juan-blog.github.io./post/apps-wm/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://juan-blog.github.io./</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://juan-blog.github.io./en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/"
+                href="https://juan-blog.github.io./"
                 />
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://juan-blog.github.io./post/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://juan-blog.github.io./tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://juan-blog.github.io./en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/tags/"
+                href="https://juan-blog.github.io./tags/"
                 />
   </url>
   

@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/categories/</loc>
+    <loc>https://juan-blog.github.io./en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/categories/"
+                href="https://juan-blog.github.io./categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://juan-blog.github.io./en/categories/"
                 />
   </url>
   
   <url>
-    <loc>/en/</loc>
+    <loc>https://juan-blog.github.io./en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/"
+                href="https://juan-blog.github.io./"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://juan-blog.github.io./en/"
                 />
   </url>
   
   <url>
-    <loc>/en/tags/</loc>
+    <loc>https://juan-blog.github.io./en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/tags/"
+                href="https://juan-blog.github.io./tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://juan-blog.github.io./en/tags/"
                 />
   </url>
   
