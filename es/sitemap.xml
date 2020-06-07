@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://juan-blog.github.io/post/apps-wm/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/linux/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/post/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://juan-blog.github.io/post/no-google/</loc>
   </url>
   
@@ -30,46 +75,6 @@
   
   <url>
     <loc>https://juan-blog.github.io/post/planeacion-emacs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/post/apps-wm/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/tags/linux/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/post/</loc>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/tags/"
-                />
   </url>
   
 </urlset>
