@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>orgmode, on Juan Castro</title>
+    <title>orgmode, on El blog de Juan</title>
     <link>https://juan-blog.github.io/tags/orgmode/</link>
-    <description>Recent content in orgmode, on Juan Castro</description>
+    <description>Recent content in orgmode, on El blog de Juan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
+    <copyright>Juan Castro</copyright>
     <lastBuildDate>Sat, 21 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://juan-blog.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +14,10 @@
     
     <item>
       <title>Como planeo mis clases utilizando Emacs y Org-mode</title>
-      <link>https://juan-blog.github.io/post/planeacion-emacs/</link>
+      <link>https://juan-blog.github.io/posts/planeacion-emacs/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io/post/planeacion-emacs/</guid>
+      <guid>https://juan-blog.github.io/posts/planeacion-emacs/</guid>
       <description>Cómo usuario de Emacs he tratado de llevar su uso a la mayoría de los aspectos de mi vida, y uno donde no podía faltar era, por supuesto, en mi trabajo. Como profesor de matemáticas, una de las principales tareas que realizo es planear mis clases, así que dediqué un tiempo en construir un sistema que me permitiera planear mis clases, llevar control sobre ellas y presentar mis planeaciones en un formato legible para el humano promedio.</description>
     </item>
     

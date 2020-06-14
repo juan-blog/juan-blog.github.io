@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emacs on Juan Castro</title>
+    <title>emacs on El blog de Juan</title>
     <link>https://juan-blog.github.io/tags/emacs/</link>
-    <description>Recent content in emacs on Juan Castro</description>
+    <description>Recent content in emacs on El blog de Juan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
+    <copyright>Juan Castro</copyright>
     <lastBuildDate>Sat, 21 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://juan-blog.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,19 +14,19 @@
     
     <item>
       <title>Como planeo mis clases utilizando Emacs y Org-mode</title>
-      <link>https://juan-blog.github.io/post/planeacion-emacs/</link>
+      <link>https://juan-blog.github.io/posts/planeacion-emacs/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io/post/planeacion-emacs/</guid>
+      <guid>https://juan-blog.github.io/posts/planeacion-emacs/</guid>
       <description>Cómo usuario de Emacs he tratado de llevar su uso a la mayoría de los aspectos de mi vida, y uno donde no podía faltar era, por supuesto, en mi trabajo. Como profesor de matemáticas, una de las principales tareas que realizo es planear mis clases, así que dediqué un tiempo en construir un sistema que me permitiera planear mis clases, llevar control sobre ellas y presentar mis planeaciones en un formato legible para el humano promedio.</description>
     </item>
     
     <item>
       <title>5 ideas equivocadas acerca de Emacs</title>
-      <link>https://juan-blog.github.io/post/5-ideas-emacs/</link>
+      <link>https://juan-blog.github.io/posts/5-ideas-emacs/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io/post/5-ideas-emacs/</guid>
+      <guid>https://juan-blog.github.io/posts/5-ideas-emacs/</guid>
       <description>Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por org-mode, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como Magit.  A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales Emacs es un mal editor de texto.</description>
     </item>
     

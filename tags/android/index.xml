@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>android, on Juan Castro</title>
+    <title>android, on El blog de Juan</title>
     <link>https://juan-blog.github.io/tags/android/</link>
-    <description>Recent content in android, on Juan Castro</description>
+    <description>Recent content in android, on El blog de Juan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
+    <copyright>Juan Castro</copyright>
     <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://juan-blog.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -13,19 +14,19 @@
     
     <item>
       <title>Alternativas libres en Android a las aplicaciones más comunes</title>
-      <link>https://juan-blog.github.io/post/alternativas-android/</link>
+      <link>https://juan-blog.github.io/posts/alternativas-android/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io/post/alternativas-android/</guid>
+      <guid>https://juan-blog.github.io/posts/alternativas-android/</guid>
       <description>La primer pregunta cuando que le pasa por la cabeza a las personas si les dicen que abandonen Google y sus servicios en su celular es &amp;#34;¿y cómo voy a hacer &amp;lt;inserte tarea&amp;gt;, si no podré usar esa aplicación?&amp;#34;. Afortunadamente hay muchas alternativas libres, disponibles en F-droid o en repositorios individuales para las aplicaciones más comunes (y otras no tanto), así que a continuación dejaré una recopilación de las mejores aplicaciones que yo he probado con las cuales no se extrañará casi nada a Google.</description>
     </item>
     
     <item>
       <title>3 meses sin Google en mi Android, ¿Cómo han sido?</title>
-      <link>https://juan-blog.github.io/post/no-google/</link>
+      <link>https://juan-blog.github.io/posts/no-google/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://juan-blog.github.io/post/no-google/</guid>
+      <guid>https://juan-blog.github.io/posts/no-google/</guid>
       <description>El 17 de abril, hace aproximadamente 3 meses, decidí instalar LineageOS 14 en mi smartphone, un humilde Samsung Core 2 que la comunidad ha mantenido vivo para llevar a él Android 7, a pesar que Samsung lo dejó en Android 4.4.2. Durante la instalación decidí no instalar las Gapps, las aplicaciones de Google con el fin de ahorrar (mucho) espacio y recursos, además de experimentar la vida sin Google, esto antes que el tema fuera puesto en al mesa por Huawei.</description>
     </item>
     

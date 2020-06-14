@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>El blog de Juan</title>
-    <link>https://juan-blog.github.io/</link>
-    <description>Recent content on El blog de Juan</description>
+    <title>Posts on El blog de Juan</title>
+    <link>https://juan-blog.github.io/posts/</link>
+    <description>Recent content in Posts on El blog de Juan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
     <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://juan-blog.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://juan-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -64,15 +64,6 @@
       
       <guid>https://juan-blog.github.io/posts/acerca/</guid>
       <description> Acerca de   Mi jiji </description>
-    </item>
-    
-    <item>
-      <title>Acerca</title>
-      <link>https://juan-blog.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://juan-blog.github.io/about/</guid>
-      <description> de xd </description>
     </item>
     
   </channel>
