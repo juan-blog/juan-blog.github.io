@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>5 ideas equivocadas acerca de Emacs - El blog de Juan</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="5 ideas equivocadas acerca de Emacs" />
+<meta property="og:description" content="Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por org-mode, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como Magit.  A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales Emacs es un mal editor de texto." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juan-blog.github.io/posts/5-ideas-emacs/" />
+<meta property="article:published_time" content="2019-07-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-02T00:00:00+00:00" /><meta property="og:site_name" content="El blog de Juan" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="5 ideas equivocadas acerca de Emacs"/>
+<meta name="twitter:description" content="Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por org-mode, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como Magit.  A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales Emacs es un mal editor de texto."/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.iocss/main.css" />
+
+</head>
+
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://juan-blog.github.io">El blog de Juan</a>
+	</div>
+
+
+	<nav>
+		
+		<a href="/es">Inicio</a>
+		
+		<a href="/posts">Todos los posts</a>
+		
+		<a href="/about">Acerca</a>
+		
+		<a href="/tags">Tags</a>
+		
+
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">5 ideas equivocadas acerca de Emacs</h1>
+			<div class="meta">Posted on Jul 2, 2019</div>
+		</div>
+		
+
+		<section class="body">
+			
+<p>
+Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por <a href="https://orgmode.org">org-mode</a>, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como <a href="https://magit.vc">Magit</a>. 
+</p>
+<p>
+A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales <strong>Emacs es un mal editor de texto</strong>. Las he leído, y considero que varias de ellas nacen de ideas equivocadas acerca de Emacs, o bien, un desconocimiento de qué es Emacs y como funciona. Así que a continuación quisiera recuperar 5 de esas ideas y por qué considero que están equivocadas, o bien, no dicen toda la verdad acerca de este programa. 
+</p>
+<h6 id="headline-1">
+1. Para usar Emacs necesitas dominar lisp, un lenguaje que casi no se utiliza y nadie sabe
+</h6>
+<p>
+Es cierto, Emacs se configura con un archivo de elisp, un dialecto de lisp, y es cierto que no es un lenguaje realmente popular. Sin embargo, <strong>no es necesario se un maestro de elisp para usar Emacs</strong>, así como no necesitas dominar Haskell para usar XMonad, ni ser un maestro en bash para usar Linux. En lo personal, no domino elisp, lo poco que se lo he aprendido copiando y pegado pedazos de código desde foros y blogs. No se requiere ser ningún genio para, por ejemplo, comprender este pedacito de código (que saqué de internet) donde se configura la agenda de org-mode:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(global-set-key (kbd <span style="color:#e6db74">&#34;C-c a&#34;</span>) <span style="color:#e6db74">&#39;org-agenda</span>)
+(setq org-agenda-window-setup
+      <span style="color:#e6db74">&#39;other-window</span>)
+(setq org-agenda-span <span style="color:#ae81ff">7</span>)
+(setq org-agenda-start-on-weekday <span style="color:#66d9ef">nil</span>)
+(setq calendar-day-name-array [<span style="color:#e6db74">&#34;domingo&#34;</span> <span style="color:#e6db74">&#34;lunes&#34;</span> <span style="color:#e6db74">&#34;martes&#34;</span> <span style="color:#e6db74">&#34;miércoles&#34;</span>
+                                 <span style="color:#e6db74">&#34;jueves&#34;</span> <span style="color:#e6db74">&#34;viernes&#34;</span> <span style="color:#e6db74">&#34;sábado&#34;</span>])
+(setq calendar-month-name-array [<span style="color:#e6db74">&#34;enero&#34;</span> <span style="color:#e6db74">&#34;febrero&#34;</span> <span style="color:#e6db74">&#34;marzo&#34;</span> <span style="color:#e6db74">&#34;abril&#34;</span> <span style="color:#e6db74">&#34;mayo&#34;</span>
+                                   <span style="color:#e6db74">&#34;junio&#34;</span> <span style="color:#e6db74">&#34;julio&#34;</span> <span style="color:#e6db74">&#34;agosto&#34;</span> <span style="color:#e6db74">&#34;septiembre&#34;</span>
+                                   <span style="color:#e6db74">&#34;octubre&#34;</span> <span style="color:#e6db74">&#34;noviembre&#34;</span> <span style="color:#e6db74">&#34;diciembre&#34;</span>])</code></pre></div>
+</div>
+<p>
+Y si no nos gusta editar un archivo de texto, Emacs cuenta con un menú gráfico para configurar Emacs, generalmente invocado con <code>M-x customize RET &lt;paquete&gt;</code>.
+</p>
+<h6 id="headline-2">
+2. Emacs es demasiado personalizable, por ello te vuelves &#34;esclavo&#34; de tu configuración, y no puedes usar la de otro usuario
+</h6>
+<p>
+Este argumento (que puede extenderse a cualquier programa, y a muchos aspectos de la vida diaria) me parece algo ridículo. Los sistemas operativos son muy personalizables también, cada quien usa diferentes paquetes, ¿quiere decir eso que solo se usar mi computadora y soy incapaz de usar la de otra persona? Los entornos de escritorio en Linux o los launchers en Android, la mayoría son muy personalizables y cada quien tiene sus aplicaciones en distintos lugares y algunos hasta cambian los atajos de teclado, ¿somos esclavos de su configuración? ¡No! Simplemente personalizas tu experiencia, lo haces más cómodo para ti, finalmente quien se supone que lo usará eres tú, no los demás, pero eso no significa que seas incapaz de usar las configuraciones de otras personas, o que tu configuración sea tan extrema que es como usar un programa totalmente nuevo.
+</p>
+<h6 id="headline-3">
+3. Emacs es muy lento, tanto que puedes hacer tu trabajo en &lt;inserte editor de texto&gt; en el tiempo que Emacs tarda en abrir
+</h6>
+<p>
+Aquí si debo darles la razón: Emacs tarda aproximadamente 13 segundos en abrir con mi configuración; sin configuración abre casi inmediatamente pero, vamos, ¿quien usa Emacs sin una configuración personal? Lo que no dicen en estos casos es que existe un comando de Emacs, <code>emacs --daemon</code> que vuelve a Emacs un demonio, y podemos abrir una ventana llamado a <code>emacsclient -c</code>, o <code>emacsclient -t</code> si queremos ejecutarlo en terminal. 
+</p>
+<p>
+Usando el cliente de Emacs no solo se agiliza el tiempo al abrir el editor al ser igual casi inmediato, sino que ahora, si cerramos Emacs, no perderemos nuestro trabajo, basta invocar nuevamente una ventana del cliente y tendremos nuestro trabajo donde quedó, pues en teoría, nunca cerramos Emacs.
+</p>
+<p>
+A pesar de las ventajas que trae usar el demonio, debo admitir que la obligación de usar un demonio puede no agradar a todas las personas, de todas maneras debemos esperar los mismos 12 o 13 segundos a que el demonio se inicie. 
+</p>
+<h6 id="headline-4">
+4. Emacs está sobrecargado (bloated), puedes hasta escuchar música, navegar en internet o enviar correos, ¡Hasta juegos tiene! Es más un sistema operativo que un editor de texto
+</h6>
+<p>
+Emacs tiene incluido un gestor de paquetes, desde este gestor de paquetes podemos bajar pequeños programas escritos en elisp, y Emacs se encarga de interpretarlos y ejecutarlos. Podemos considerarlos como extensiones o plugins que otros editores, como Vim o VSCode usan. No es necesario usar paquetes externos o instalarlos de hecho, aunque si es cierto que algunos de ellos mejoran la experiencia. Dicho esto, afirmar que Emacs es un Sistema Operativo es como afirmar que el interprete de Python también es un sistema operativo, pues puedes bajar paquetes con el (pip), y hay paquetes disponibles para muchas cosas.
+</p>
+<p>
+Lo que si es cierto y me molesta hasta cierto punto, es que el paquete principal trae demasiados paquete inútiles. Entiendo que incluya org-mode, un cliente IRC, hasta un navegador web (bastante bueno, he de decirlo) pero ¿Tetris? ¿Un juego de psicólogo? ¿Solitario? Sería bueno que, al menos, existiera una versión &#34;minima&#34; de Emacs, solo con los paquetes necesarios y dejar al usuario la opción si quiere descargar el juego de Pong.
+</p>
+<h6 id="headline-5">
+5. Emacs es un editor de texto
+</h6>
+<p>
+La <a href="https://www.gnu.org/software/emacs/">página web de Emacs</a>, lo describe como &#34;<em>un interprete para Emacs Lisp, un dialecto del lenguaje de programación Lisp con extensiones para soportar edición de texto</em>&#34;. Es decir, Emacs es un interprete de elisp, no un editor de texto en sí, es más parecido, en su núcleo, al intérprete de Python o Ruby que a un editor de texto. Esto explica porque existen tantos paquetes disponibles en Emacs, y porque hace mucho más que solo editar texto, pues la ambición de Emacs no es editar texto, es ejecutar paquetes escritos en elisp.
+</p>
+<p>
+Para terminar, quiero decir que estos puntos expuestos aquí no pretenden cambiar la opinión de las personas, o evangelizarlos en el uso de Emacs, simplemente aclarar ciertas ideas que considero no están del todo acertadas. Cada quien puede usar el editor de texto que prefiera y, en mi opinión, el mejor software y el mejor editor de texto es aquel que cumple con tus necesidades y te sientes cómodo con su uso, no el que los demás consideren mejor.
+</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/emacs">emacs</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>⚡️
+2020 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>  Juan Castro |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a> |  </footer>
+
+</div>
+    </body>
+</html>

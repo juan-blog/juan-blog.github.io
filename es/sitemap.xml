@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://juan-blog.github.io/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/apps-wm/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/linux/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/alternativas-android/</loc>
+    <lastmod>2019-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/android/</loc>
+    <lastmod>2019-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/freesoftware/</loc>
+    <lastmod>2019-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/planeacion-emacs/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/educaci%C3%B3n/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/emacs/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/orgmode/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/no-google/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/google/</loc>
+    <lastmod>2019-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/5-ideas-emacs/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/acerca/</loc>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/categories/"
+                />
+  </url>
+  
+</urlset>
