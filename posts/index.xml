@@ -57,14 +57,5 @@
       <description>Emacs es mi editor de texto favorito. En un principio me obligué a usarlo solamente por org-mode, pero conforme fui personalizándolo y aprendiendo más sobre su uso, se volvió parte integral de mi trabajo. Hoy día, Emacs es mi editor de texto principal, no solo para org-mode, sino para toda clase de texto plano, además de aprovechar algunos paquetes interesantes como Magit.  A lo largo de mi experiencia con Emacs, he visto varias entradas de blogs, hilos en foros y videos donde hablan acerca de Emacs, generalmente comparándolo con Vim, y recuperan varias razones por las cuales Emacs es un mal editor de texto.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://juan-blog.github.io/posts/acerca/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://juan-blog.github.io/posts/acerca/</guid>
-      <description> Acerca de   Mi jiji </description>
-    </item>
-    
   </channel>
 </rss>

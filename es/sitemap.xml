@@ -98,21 +98,7 @@
   </url>
   
   <url>
-    <loc>https://juan-blog.github.io/posts/acerca/</loc>
-  </url>
-  
-  <url>
     <loc>https://juan-blog.github.io/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/about/"
-                />
   </url>
   
   <url>
