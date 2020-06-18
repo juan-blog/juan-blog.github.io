@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Como planeo mis clases utilizando Emacs y Org-mode - El blog de Juan</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Como planeo mis clases utilizando Emacs y Org-mode" />
@@ -11,43 +12,55 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Como planeo mis clases utilizando Emacs y Org-mode"/>
 <meta name="twitter:description" content="Cómo usuario de Emacs he tratado de llevar su uso a la mayoría de los aspectos de mi vida, y uno donde no podía faltar era, por supuesto, en mi trabajo. Como profesor de matemáticas, una de las principales tareas que realizo es planear mis clases, así que dediqué un tiempo en construir un sistema que me permitiera planear mis clases, llevar control sobre ellas y presentar mis planeaciones en un formato legible para el humano promedio."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/main.css" /><link rel="stylesheet" type="text/css" href="https://juan-blog.github.io/css/dark.css"  />
 
+	
+	<script src="https://juan-blog.github.io/js/main.js"></script>
 </head>
 
 <body>
-        <div class="content"><header>
-	<div class="main">
-		<a href="https://juan-blog.github.io/">El blog de Juan</a>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://juan-blog.github.io/">
+	<h1 class="site-title"><a href="https://juan-blog.github.io/">El blog de Juan</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
 	</div>
 
-
-	<nav>
-		
-		<a href="/es">Inicio</a>
-		
-		<a href="/posts">Todos los posts</a>
-		
-		<a href="/about">Acerca</a>
-		
-		<a href="/tags">Tags</a>
-		
-
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/es">Inicio</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Todos los posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">Acerca</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
 	</nav>
-</header>
+</div>
 
-<main>
-	<article>
-		<div class="title">
+
+		<div class="post-header">
 			<h1 class="title">Como planeo mis clases utilizando Emacs y Org-mode</h1>
-			<div class="meta">Posted on Sep 21, 2019</div>
+			<div class="meta">Posted at &mdash; Sep 21, 2019</div>
 		</div>
-		
 
-		<section class="body">
+		<div class="markdown">
 			
 <p>
 Cómo usuario de Emacs he tratado de llevar su uso a la mayoría de los aspectos de mi vida, y uno donde no podía faltar era, por supuesto, en mi trabajo. Como profesor de matemáticas, una de las principales tareas que realizo es planear mis clases, así que dediqué un tiempo en construir un sistema que me permitiera planear mis clases, llevar control sobre ellas y presentar mis planeaciones en un formato legible para el humano promedio. A continuación comparto lo que he logrado hasta ahora.
@@ -285,32 +298,37 @@ Mejorar el PDF resultante: lo admito, se ve feo, la tabla de Word será todo lo 
 Pese a que quedan cosas por mejorar, considero que he logrado un sistema funcional, sencillo de seguir (una vez ya establecido) y que me permite centrarme en diseñar mis clases, y no en acomodar una horrible tabla. Claro que para alcanzar este sistema tardé varios días buscando e ideando como hacer lo que quería, y creo que justo ahora estoy cerca del formato perfecto para planear clases. Al menos para mi.
 </p>
 
-		</section>
+		</div>
 
 		<div class="post-tags">
 			
-			
-			<nav class="nav tags">
-				<ul class="tags">
-					
-					<li><a href="/tags/emacs">emacs,</a></li>
-					
-					<li><a href="/tags/orgmode">orgmode,</a></li>
-					
-					<li><a href="/tags/educaci%C3%B3n">educación</a></li>
-					
-				</ul>
-			</nav>
-			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/emacs">emacs,</a></li>
+								
+								<li><a href="/tags/orgmode">orgmode,</a></li>
+								
+								<li><a href="/tags/educaci%C3%B3n">educación</a></li>
+								
+							</ul>
+					</nav>
+				
 			
 		</div>
-	</article>
-</main>
-<footer>
-<hr>⚡️
-2020 <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0 </a>  Juan Castro |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | 
-</footer>
-
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	  <div> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>  Juan Castro |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a>  
+	    
+	    
+	  </div>
+	</nav>
 </div>
-    </body>
+
+
+
+
+</body>
 </html>
