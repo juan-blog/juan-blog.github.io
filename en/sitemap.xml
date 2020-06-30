@@ -3,21 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://juan-blog.github.io/en/categories/</loc>
+    <loc>https://juan-blog.github.io/en/tags/bujo/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://juan-blog.github.io/categories/"
+                href="https://juan-blog.github.io/tags/bujo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://juan-blog.github.io/en/categories/"
+                href="https://juan-blog.github.io/en/tags/bujo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/tags/bulletjournal/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/bulletjournal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/bulletjournal/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/tags/gtd/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/gtd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/gtd/"
                 />
   </url>
   
   <url>
     <loc>https://juan-blog.github.io/en/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -31,7 +63,43 @@
   </url>
   
   <url>
+    <loc>https://juan-blog.github.io/en/posts/bujo/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/bujo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/bujo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/tags/productivity/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://juan-blog.github.io/en/tags/</loc>
+    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -41,6 +109,34 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://juan-blog.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/categories/"
                 />
   </url>
   

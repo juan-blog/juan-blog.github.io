@@ -3,8 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://juan-blog.github.io/tags/bujo/</loc>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/bujo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/bujo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/bulletjournal/</loc>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/bulletjournal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/bulletjournal/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/gtd/</loc>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/gtd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/gtd/"
+                />
+  </url>
+  
+  <url>
     <loc>https://juan-blog.github.io/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,23 +63,43 @@
   </url>
   
   <url>
-    <loc>https://juan-blog.github.io/posts/apps-wm/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/tags/linux/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <loc>https://juan-blog.github.io/posts/bujo/</loc>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/bujo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/bujo/"
+                />
   </url>
   
   <url>
     <loc>https://juan-blog.github.io/posts/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/productividad/</loc>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://juan-blog.github.io/tags/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-28T22:15:31-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,6 +110,16 @@
                 hreflang="es"
                 href="https://juan-blog.github.io/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/posts/apps-wm/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/tags/linux/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -99,6 +174,16 @@
   
   <url>
     <loc>https://juan-blog.github.io/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/about/"
+                />
   </url>
   
   <url>
