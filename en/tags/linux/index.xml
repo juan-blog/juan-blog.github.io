@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Juan Castro</title>
+    <link>https://juan-blog.github.io/en/tags/linux/</link>
+    <description>Recent content in linux on Juan Castro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>Juan Castro</copyright>
+    <lastBuildDate>Wed, 07 Oct 2020 18:34:22 -0600</lastBuildDate><atom:link href="https://juan-blog.github.io/en/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use dwm without dying in the attempt</title>
+      <link>https://juan-blog.github.io/en/posts/dwm/</link>
+      <pubDate>Wed, 07 Oct 2020 18:34:22 -0600</pubDate>
+      
+      <guid>https://juan-blog.github.io/en/posts/dwm/</guid>
+      <description>dwm is a somewhat complicated window manager to start with. As a product of the suckless community it adheres to its philosophy and tries to be minimalist, frugal and limited to only 2000 lines of source code. Due to this, when downloading dwm we will find little or no documentation (documentation is the source code), and a barely usable window manager, which lacks several of the basic options we would expect to have.</description>
+    </item>
+    
+  </channel>
+</rss>

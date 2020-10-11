@@ -217,7 +217,7 @@ Y la barra superior, ¿sirve para algo?
 </h3>
 <div id="outline-text-headline-6" class="outline-text-3">
 <p>
-dwm viene con un panel incorporado en la parte superior. Podemos moverlo a la parte inferior cambiando la línea <code>static const int topbar = 1;</code> por un cero. Este panel nos muestra los tags (o escritorios), el layout actual, el nombre de la ventana activa y, del otro lado, la versión de dwm que tenemos.</p>
+dwm viene con un panel incorporado en la parte superior. Podemos moverlo a la parte inferior cambiando la línea <code>static const int topbar = 1;</code> por un cero. Este panel nos muestra los escritorios (tags), el layout actual, el nombre de la ventana activa y, del otro lado, la versión de dwm que tenemos.</p>
 <p>
 Este último texto pude modificarse con el comando <code>xsetroot -name</code>. Si nosotros ejecutamos <code>xsetroot -name &#34;Probando el panel&#34;</code> veremos como el texto del panel cambia por <code>Probando el panel</code>. ¿Ya entendimos? Podemos generar un script simple para mostrar la información, <em>á la</em> lemonbar:</p>
 <div class="src src-bash">
@@ -323,7 +323,7 @@ Esto no solo instalará dwm en tu carpeta local, sino que también reiniciará d
 export PATH</code></pre></div>
 </div>
 <p>
-<strong>NOTA:</strong> Esto aplica solo si usas <code>startx</code>. Si usas un DM, quizá podrías cambiar el comando que se ejecuta en <code>dwm.desktop</code>, mas no puedo afirmarlo.</p>
+<strong>NOTA:</strong> Asegurate de desinstalar o borrar manualmente el binario en <code>/usr/bin/</code>, sino, el sistema se confundirá sobre que binario ejecutar.</p>
 </div>
 </div>
 <div id="outline-container-headline-15" class="outline-5">
@@ -339,7 +339,7 @@ Mantén tu propia build, no uses las de otras personas
 Sácale provecho a los tags
 </h5>
 <div id="outline-text-headline-16" class="outline-text-5">
-<p>dwm no usa escritorios, usa tags. En lugar de tener un set de escritorios virtuales en donde puedes colocar tus ventanas, tienes un set de tags que puedes asignarle a tus ventanas. Aunque en teoría hacen lo mismo, los tags te permiten cosas como mostrar tus ventanas en un número determinado de tags a la vez (en contraste a los escritorios que solo permiten ver una ventana en el escritorio actual o en todos [sticky]), visualizar varias tags a la vez o desactivar tags para ciertas ventanas. Te recomiendo que pruebes esta función y mires si tiene lugar en tu workflow.</p>
+<p>dwm no usa escritorios, usa tags. En lugar de tener un set de escritorios virtuales en donde puedes colocar tus ventanas, tienes un set de tags que puedes asignarle a tus ventanas. Aunque parece que son lo mismo, los tags te permiten cosas como mostrar tus ventanas en un número determinado de tags a la vez (en contraste a los escritorios que solo permiten ver una ventana en el escritorio actual o en todos [sticky]), visualizar varias tags a la vez o desactivar tags para ciertas ventanas. Te recomiendo que pruebes esta función y mires si tiene lugar en tu workflow.</p>
 </div>
 </div>
 <div id="outline-container-headline-17" class="outline-5">
@@ -349,7 +349,7 @@ Usa <code>.xinitrc</code> y <code>.xprofile</code> para iniciar tus programas au
 <div id="outline-text-headline-17" class="outline-text-5">
 <p>De seguro quieres que algunos programas inicien automáticamente junto con dwm, como tu fondo de pantalla o algunos demonios. Puedes iniciarlos automáticamente agregándolos a tu <code>.xinitrc</code> si usas <code>startx</code>, o a tu <code>.xprofile</code> si usas un gestor de pantallas:</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nitrogen -R &amp;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nitrogen --restore &amp;
 emacs --daemon &amp;
 picom &amp;</code></pre></div>
 </div>
@@ -362,7 +362,7 @@ picom &amp;</code></pre></div>
 No tengas miedo a usar programas &#34;hinchados&#34;
 </h5>
 <div id="outline-text-headline-18" class="outline-text-5">
-<p>Usar dwm no te obliga a usar únicamente programas que compartan la filosofía <em>suckless</em>. Si quieres o necesitas usar programas menos minimalistas como <code>rofi</code>, <code>firefox</code>, <code>alacritty</code>, <code>SystemD</code> o <code>Emacs</code>, adelante. Es tu sistema, no el de los demás.</p>
+<p>Usar dwm no te obliga a usar únicamente programas que compartan la filosofía <em>suckless</em>. Si quieres o necesitas usar programas menos minimalistas como <code>rofi</code>, <code>firefox</code>, <code>alacritty</code>, <code>Systemd</code> o <code>Emacs</code>, adelante. Es tu sistema, no el de los demás.</p>
 </div>
 </div>
 </div>
@@ -381,7 +381,7 @@ Terminales
 <div id="outline-text-headline-20" class="outline-text-5">
 <ul>
 <li>
-<p><a href="https://st.suckless.org/">st</a>: La terminal desarrollada por la comunidad suckless. Sigue las mismas líneas de diseño que dwm, por lo que si quieres funciones muy extravagantes, algunas básicas, tendrás que parchar.</p>
+<p><a href="https://st.suckless.org/">st</a>: La terminal desarrollada por la comunidad suckless. Sigue las mismas líneas de diseño que dwm, por lo que si quieres funciones muy extravagantes o algunas básicas, tendrás que parchar.</p>
 </li>
 <li>
 <p><a href="https://github.com/alacritty/alacritty">Alacritty</a>: La autodenominada terminal más rápida en existencia gracias a su aceleración por GPU. Es buena y trae muchas opciones interesantes.</p>
@@ -399,7 +399,7 @@ Menús
 <div id="outline-text-headline-21" class="outline-text-5">
 <ul>
 <li>
-<p><a href="https://tools.suckless.org/dmenu/">dmenu</a>: El menú dinámico, producto también de suckless. Permite crear menús gŕaficos utilizando STDOUT, lo que lo vuelve perfecto para scripts. Además incorpora un script llamado <code>dmenu_run</code> que se suele usar como lanzador de aplicaciones.</p>
+<p><a href="https://tools.suckless.org/dmenu/">dmenu</a>: El menú dinámico, producto también de suckless. Permite crear menús gráficos utilizando STDOUT, lo que lo vuelve perfecto para scripts. Además incorpora un script llamado <code>dmenu_run</code> que se suele usar como lanzador de aplicaciones.</p>
 </li>
 <li>
 <p><a href="https://github.com/davatorium/rofi">rofi</a>: Un menú mucho más completo. Incluye un menú para lanzar aplicaciones, un cambiador de ventanas, un menú para ssh y un reemplazo completo para dmenu. Además es muy personalizable.</p>
@@ -490,10 +490,10 @@ Visor de documentos
 Parches que debería usar:
 </h5>
 <div id="outline-text-headline-28" class="outline-text-5">
-<p>Esto depende de cada quien, aún así te comparto la lista de parches que yo uso.</p>
+<p>Esto depende de cada quien, pero te comparto la lista de parches que yo uso.</p>
 <div id="outline-container-headline-29" class="outline-7">
 <h7 id="headline-29">
-Funcionales
+<strong>Funcionales</strong>
 </h7>
 <div id="outline-text-headline-29" class="outline-text-7">
 <p>Aquellos parches que añaden nuevas funciones a DWM, algunas de ellas son funciones sencillas que están presentes en otros TWM.</p>
@@ -527,7 +527,7 @@ Funcionales
 </div>
 <div id="outline-container-headline-30" class="outline-7">
 <h7 id="headline-30">
-Layouts
+<strong>Layouts</strong>
 </h7>
 <div id="outline-text-headline-30" class="outline-text-7">
 <p>Son aquellas <em>layouts</em> nuevas que he agregado a DWM.</p>
@@ -552,7 +552,7 @@ Layouts
 </div>
 <div id="outline-container-headline-31" class="outline-7">
 <h7 id="headline-31">
-Estéticos
+<strong>Estéticos</strong>
 </h7>
 <div id="outline-text-headline-31" class="outline-text-7">
 <p>Parches que unicamente sirven para mejorar el aspecto estético del WM y aportan poco o nada al aspecto funcional.</p>
@@ -610,9 +610,7 @@ El proyecto <a href="https://github.com/bakkeby/dwm-flexipatch">flexipatch</a> e
 	    
 	    
 	
-		| <a href="https://juan-blog.github.io/posts/bujo/">Leer en español</a>
-	
-		| <a href="https://juan-blog.github.io/en/posts/bujo/">Read in english</a>
+		| <a href="https://juan-blog.github.io/en/posts/dwm/">Read in english</a>
 	
 
 	  </div>

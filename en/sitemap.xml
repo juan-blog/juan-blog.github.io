@@ -3,6 +3,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://juan-blog.github.io/en/tags/dwm/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/dwm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/dwm/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/dwm/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/dwm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/dwm/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/tags/linux/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/linux/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/tags/</loc>
+    <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://juan-blog.github.io/en/tags/bujo/</loc>
     <lastmod>2020-06-29T22:24:32-06:00</lastmod>
     <xhtml:link
@@ -48,28 +138,8 @@
   </url>
   
   <url>
-    <loc>https://juan-blog.github.io/en/</loc>
-    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/"
-                />
-  </url>
-  
-  <url>
     <loc>https://juan-blog.github.io/en/posts/bujo/</loc>
     <lastmod>2020-06-29T22:24:32-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/dwm/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -83,38 +153,8 @@
   </url>
   
   <url>
-    <loc>https://juan-blog.github.io/en/posts/</loc>
-    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/posts/"
-                />
-  </url>
-  
-  <url>
     <loc>https://juan-blog.github.io/en/tags/productivity/</loc>
     <lastmod>2020-06-29T22:24:32-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/en/tags/</loc>
-    <lastmod>2020-06-29T22:24:32-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/tags/"
-                />
   </url>
   
   <url>

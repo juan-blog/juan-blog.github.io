@@ -7,13 +7,8 @@
     <lastmod>2020-10-07T18:34:22-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/bujo/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
-                href="https://juan-blog.github.io/en/posts/bujo/"
+                href="https://juan-blog.github.io/en/posts/dwm/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -25,6 +20,16 @@
   <url>
     <loc>https://juan-blog.github.io/tags/dwm/</loc>
     <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/dwm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/dwm/"
+                />
   </url>
   
   <url>
@@ -45,6 +50,16 @@
   <url>
     <loc>https://juan-blog.github.io/tags/linux/</loc>
     <lastmod>2020-10-07T18:34:22-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/tags/linux/"
+                />
   </url>
   
   <url>
@@ -125,11 +140,6 @@
   <url>
     <loc>https://juan-blog.github.io/posts/bujo/</loc>
     <lastmod>2020-06-28T22:15:31-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/dwm/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
