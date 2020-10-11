@@ -6,10 +6,6 @@
     <description>Recent content in Categories on Juan Castro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <copyright>Juan Castro</copyright>
-    
-	<atom:link href="https://juan-blog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Juan Castro</copyright><atom:link href="https://juan-blog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

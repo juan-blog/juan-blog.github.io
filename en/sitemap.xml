@@ -68,6 +68,11 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
+                href="https://juan-blog.github.io/posts/dwm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
                 href="https://juan-blog.github.io/posts/bujo/"
                 />
     <xhtml:link
