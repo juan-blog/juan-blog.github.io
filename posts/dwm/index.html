@@ -263,27 +263,27 @@ Otros métodos
 Tips y recomendaciones 
 </h3>
 <div id="outline-text-headline-10" class="outline-text-3">
-<div id="outline-container-headline-11" class="outline-7">
-<h7 id="headline-11">
+<div id="outline-container-headline-11" class="outline-5">
+<h5 id="headline-11">
 Si el parche no aplica, y se vuelve muy complicado aplicarlo manualmente, déjalo por la paz
-</h7>
-<div id="outline-text-headline-11" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-11" class="outline-text-5">
 <p>En ocasiones los parches entran en conflicto con otros que tenemos aplicados, y si no sabemos como funciona dwm o no somos maestros de C, terminaremos rompiendo el programa. Si no sabes lo que haces, es mejor dejarlo así.</p>
 </div>
 </div>
-<div id="outline-container-headline-12" class="outline-7">
-<h7 id="headline-12">
+<div id="outline-container-headline-12" class="outline-5">
+<h5 id="headline-12">
 Mantén tu propio build en github o algún sitio similar
-</h7>
-<div id="outline-text-headline-12" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-12" class="outline-text-5">
 <p>No solo te permitirá compartirlo, sino que tendrás un respaldo en la nube de tu build y de los cambios hechos. Así puedes regresar a una versión anterior si lo deseas.</p>
 </div>
 </div>
-<div id="outline-container-headline-13" class="outline-7">
-<h7 id="headline-13">
+<div id="outline-container-headline-13" class="outline-5">
+<h5 id="headline-13">
 Como evitar reiniciar la PC cada vez que recompilas
-</h7>
-<div id="outline-text-headline-13" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-13" class="outline-text-5">
 <p>Cada vez que cambias la más mínima cosita en dwm necesitas recompilar y reinicar para ver tus cambios aplicados. Esto puede volver loco a cualquiera. Aquí la solución.</p>
 <ul>
 <li>
@@ -302,11 +302,11 @@ Como evitar reiniciar la PC cada vez que recompilas
 Para reiniciar dwm solamente ejecuta <code>killall dwm</code> y se reinciará. Si quieres salir de la sesión, ejecuta <code>killall xinit</code>.</p>
 </div>
 </div>
-<div id="outline-container-headline-14" class="outline-7">
-<h7 id="headline-14">
+<div id="outline-container-headline-14" class="outline-5">
+<h5 id="headline-14">
 Evitar tener que usar <code>sudo</code> para instalar dwm
-</h7>
-<div id="outline-text-headline-14" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-14" class="outline-text-5">
 <p>Tener que reinstalar con permisos <code>sudo</code> cada ocasión también puede volverse molesto. Si quieres que dwm se instale de manera local con tu usuario, puedes editar el <code>Makefile</code> de dwm, en la sección install, y cambiarlo por lo siguiente:</p>
 <div class="src src-makefile">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">install</span><span style="color:#f92672">:</span> all
@@ -326,27 +326,27 @@ export PATH</code></pre></div>
 <strong>NOTA:</strong> Esto aplica solo si usas <code>startx</code>. Si usas un DM, quizá podrías cambiar el comando que se ejecuta en <code>dwm.desktop</code>, mas no puedo afirmarlo.</p>
 </div>
 </div>
-<div id="outline-container-headline-15" class="outline-7">
-<h7 id="headline-15">
+<div id="outline-container-headline-15" class="outline-5">
+<h5 id="headline-15">
 Mantén tu propia build, no uses las de otras personas
-</h7>
-<div id="outline-text-headline-15" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-15" class="outline-text-5">
 <p>Otras personas pueden agregar cosas que no quieres y no podrás eliminar porque forman parte integral de su sistema. inspírate en el sistema de otros para hacer el tuyo.</p>
 </div>
 </div>
-<div id="outline-container-headline-16" class="outline-7">
-<h7 id="headline-16">
+<div id="outline-container-headline-16" class="outline-5">
+<h5 id="headline-16">
 Sácale provecho a los tags
-</h7>
-<div id="outline-text-headline-16" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-16" class="outline-text-5">
 <p>dwm no usa escritorios, usa tags. En lugar de tener un set de escritorios virtuales en donde puedes colocar tus ventanas, tienes un set de tags que puedes asignarle a tus ventanas. Aunque en teoría hacen lo mismo, los tags te permiten cosas como mostrar tus ventanas en un número determinado de tags a la vez (en contraste a los escritorios que solo permiten ver una ventana en el escritorio actual o en todos [sticky]), visualizar varias tags a la vez o desactivar tags para ciertas ventanas. Te recomiendo que pruebes esta función y mires si tiene lugar en tu workflow.</p>
 </div>
 </div>
-<div id="outline-container-headline-17" class="outline-7">
-<h7 id="headline-17">
+<div id="outline-container-headline-17" class="outline-5">
+<h5 id="headline-17">
 Usa <code>.xinitrc</code> y <code>.xprofile</code> para iniciar tus programas automáticamente 
-</h7>
-<div id="outline-text-headline-17" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-17" class="outline-text-5">
 <p>De seguro quieres que algunos programas inicien automáticamente junto con dwm, como tu fondo de pantalla o algunos demonios. Puedes iniciarlos automáticamente agregándolos a tu <code>.xinitrc</code> si usas <code>startx</code>, o a tu <code>.xprofile</code> si usas un gestor de pantallas:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nitrogen -R &amp;
@@ -357,11 +357,11 @@ picom &amp;</code></pre></div>
        Recuerda agregar todo eso antes de la línea de ejecución de dwm.</p>
 </div>
 </div>
-<div id="outline-container-headline-18" class="outline-7">
-<h7 id="headline-18">
+<div id="outline-container-headline-18" class="outline-5">
+<h5 id="headline-18">
 No tengas miedo a usar programas &#34;hinchados&#34;
-</h7>
-<div id="outline-text-headline-18" class="outline-text-7">
+</h5>
+<div id="outline-text-headline-18" class="outline-text-5">
 <p>Usar dwm no te obliga a usar únicamente programas que compartan la filosofía <em>suckless</em>. Si quieres o necesitas usar programas menos minimalistas como <code>rofi</code>, <code>firefox</code>, <code>alacritty</code>, <code>SystemD</code> o <code>Emacs</code>, adelante. Es tu sistema, no el de los demás.</p>
 </div>
 </div>
