@@ -7,15 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Mon, 29 Jun 2020 22:24:32 -0600</lastBuildDate><atom:link href="https://juan-blog.github.io/en/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jun 2020 22:24:32 -0600</lastBuildDate>
+    
+	<atom:link href="https://juan-blog.github.io/en/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>My new productivity system: Bullet Journal and GTD</title>
       <link>https://juan-blog.github.io/en/posts/bujo/</link>
       <pubDate>Mon, 29 Jun 2020 22:24:32 -0600</pubDate>
       
       <guid>https://juan-blog.github.io/en/posts/bujo/</guid>
-      <description>For a long time I have tried to use applications for making notes, to-do lists, calendars and other &amp;#34;productivity&amp;#34; systems. However, I have always encountered the same problem: after a couple of days or weeks I stop using it.
- About two years ago I discovered the GTD method of productivity. It seemed that I had just found the holy grail and that I was facing the definitive solution to my desire to introduce some productivity methodology into my life.</description>
+      <description>For a long time I have tried to use applications for making notes, to-do lists, calendars and other &amp;#34;productivity&amp;#34; systems. However, I have always encountered the same problem: after a couple of days or weeks I stop using it.  About two years ago I discovered the GTD method of productivity. It seemed that I had just found the holy grail and that I was facing the definitive solution to my desire to introduce some productivity methodology into my life.</description>
     </item>
     
   </channel>

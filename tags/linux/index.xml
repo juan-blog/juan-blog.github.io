@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 18:34:22 -0600</lastBuildDate><atom:link href="https://juan-blog.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 22:04:22 -0600</lastBuildDate>
+    
+	<atom:link href="https://juan-blog.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Porqué cambié a GNOME y en qué rayos estaba pensando</title>
+      <link>https://juan-blog.github.io/posts/gnome3/</link>
+      <pubDate>Sun, 18 Oct 2020 22:04:22 -0600</pubDate>
+      
+      <guid>https://juan-blog.github.io/posts/gnome3/</guid>
+      <description>Hace poco más de una semana tomé una decisión radical: descargué la más nueva versión de Fedora 32 y la instalé en mi sistema. Dejé atrás el universo suckless de dwm, el minimalismo de Arch Linux y el workflow basado en aplicaciones de terminal y el acomodo automático de ventanas para dar paso a un sistema totalmente diferente, hinchado, y con un workflow totalmente diferente. ¿Qué demonios me estaba pasando por la cabeza al hacerlo?</description>
+    </item>
+    
     <item>
       <title>Como usar dwm sin morir en el intento</title>
       <link>https://juan-blog.github.io/posts/dwm/</link>

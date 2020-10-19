@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Porqué cambié a GNOME y en qué rayos estaba pensando - Juan Castro</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Porqué cambié a GNOME y en qué rayos estaba pensando" />
+<meta property="og:description" content="Hace poco más de una semana decidí abandonar dwm y Arch Linux, y reemplazarlos por GNOME 3 y Fedora. Lo se herejía, pero ¿por qué? y ¿cómo me ha ido?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juan-blog.github.io/posts/gnome3/" />
+<meta property="article:published_time" content="2020-10-18T22:04:22-06:00" />
+<meta property="article:modified_time" content="2020-10-18T22:04:22-06:00" /><meta property="og:site_name" content="Juan Castro" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Porqué cambié a GNOME y en qué rayos estaba pensando"/>
+<meta name="twitter:description" content="Hace poco más de una semana decidí abandonar dwm y Arch Linux, y reemplazarlos por GNOME 3 y Fedora. Lo se herejía, pero ¿por qué? y ¿cómo me ha ido?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/main.css" /><link rel="stylesheet" type="text/css" href="https://juan-blog.github.io/css/dark.css"  />
+
+	
+	<script src="https://juan-blog.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://juan-blog.github.io/">
+	<h1 class="site-title"><a href="https://juan-blog.github.io/">Juan Castro</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/es">Inicio</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Todos los posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">Acerca</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Porqué cambié a GNOME y en qué rayos estaba pensando</h1>
+			<div class="meta">Posted at &mdash; Oct 18, 2020</div>
+		</div>
+
+		<div class="markdown">
+			
+<p>
+Hace poco más de una semana tomé una decisión radical: descargué la más nueva versión de Fedora 32 y la instalé en mi sistema. Dejé atrás el universo <em>suckless</em> de dwm, el minimalismo de Arch Linux y el <em>workflow</em> basado en aplicaciones de terminal y el acomodo automático de ventanas para dar paso a un sistema totalmente diferente, <em>hinchado</em>, y con un <em>workflow</em> totalmente diferente. ¿Qué demonios me estaba pasando por la cabeza al hacerlo? Bueno, tengo una razón. Creo.
+</p>
+<h2 id="headline-1">
+El razonamiento
+</h2>
+<p>
+Desde hace tiempo noté que mi Thinkpad T430 se sobrecalentaba en ciertas situaciones. Por ejemplo, una conferencia en Zoom, explorar Google Earth, o ciertos juegos como <em>Doki Doki Literature Club</em> o <em>CS:GO</em> hacían que la temperatura subiera a más de 85°C y a veces a más de 90° y hasta a apagarse por el calor. En situaciones &#34;normales&#34; se mantenía en unos sanos 60°C aproximadamente (la temperatura ambiente alcanza los 40°C así que no está tan mal) pero apenas le exigía poquito, incluso Firefox+Spotify hacía subir la temperatura por arriba de los 70°C.
+</p>
+<p>
+La solución obvia parecía cambiar la pasta térmica y darle limpieza, pero después de hacerlo la situación con la temperatura continuó. El problema es de software al parecer. Y sí, lo más seguro es que lo haya provocado yo al editar algún archivo relacionado con el uso del CPU o la batería, pero identificar si ese era el caso o no era una tarea titánica que parecía más fácil simplemente probar otra distro.
+</p>
+<h4 id="headline-2">
+Ok, pero ¿por qué esa combinación?
+</h4>
+<p>
+Mi hermano usa felizmente GNOME 3 en Ubuntu 20.04 y me atrajo un poco. Nunca había usado GNOME antes, le sacaba la vuelta porque es &#34;inusable, hinchado y es malo&#34;. Sin embargo, la curiosidad pudo conmigo, y vivir la experiencia de un Entorno de Escritorio completo después de casi dos años usando solamente <em>Tiling Window Managers</em> me atrajo bastante.
+</p>
+<p>
+Elegí Fedora porque no quiero usar Ubuntu y porque nunca había usado de manera seria Fedora antes. Sería una experiencia totalmente nueva y diferente. Y si debo ser totalmente honesto, lo de la temperatura fue, en parte, un pretexto para poder vivirla.
+</p>
+<h2 id="headline-3">
+La vida en Fedora
+</h2>
+<p>
+Antes de hablar sobre GNOME quiero dedicar unos párrafos a Fedora. Mi único acercamiento a Fedora fue hace unos años, la instalé con Plasma pero destrocé el sistema con el Global Menu y desde ahí se trababa cada que iniciaba sesión. Fueron unos 30 minutos agradables. También probé su sabor <a href="https://spins.fedoraproject.org/en/soas/">Sugar on a stick</a> pero no creo que cuente en realidad. 
+</p>
+<p>
+Hasta ahorita estoy contento con Fedora. Hace bastante tiempo comprendí que las distros GNU/Linux son casi todas lo mismo, la única diferencia radica en el software preinstalado, el gestor de paquetes y ciertas configuraciones. Fedora no es la excepción. Salvo por el hecho que usa <code>dnf</code> como gestor de paquetes y la elección de software, no hay mayores diferencias con respecto a otras distros. Sin embargo, si debo resaltar algunos puntos, unos positivos, otros negativos, sobre la distro comunitaria de Red Hat.
+</p>
+<h4 id="headline-4">
+Lo que más me gustó 
+</h4>
+<ul>
+<li>
+<p>
+El instalador Anaconda: Super simple, se compone solo de 4 pasos, y si dejas la configuración automática (muy acertada, solo tuve que cambiar mi zona y las particiones) se vuelve un solo paso. Tuve instalado un sistema completo y listo para usar en menos de 20 minutos, comparado con los 50 o más que toma instalar la base de Arch.
+</p>
+</li>
+<li>
+<p>
+La integración con GNOME: Fedora no incorpora ninguna aplicación propia como YaST, <code>manjaro-settings</code>, <code>gdebi</code> ni nada similar. GNOME maneja todo, y el sistema se siente bastante integrado. No hay nada, por defecto, que salga de las lineas de GNOME o que se sienta independiente del Entorno de Escritorio.
+</p>
+</li>
+</ul>
+<p>
+La selección de software: Bastante minimalista en este aspecto, pues solo incluye unos pocos programas de GNOME, Firefox y Libre Office. Lo necesario para comenzar a utilizar el sistema y nada más.
+</p>
+<h4 id="headline-5">
+Lo que no me gusta tanto
+</h4>
+<ul>
+<li>
+<p>
+DNF: El gestor de paquete de Fedora se llama <code>dnf</code> y es LENTO. No solo por estar escrito en python, sino que las descargas son sumamente lentas por defecto, hablo de 20 kB/s en promedio. Tuve que modificar algunas cosas en la configuración para que las descargas fueran a una velocidad aceptable.
+</p>
+</li>
+<li>
+<p>
+No incluye códecs multimedia: No creí que en pleno 2020 hubiera una distribución que no viniera con los códecs multimedia preinstalados. No es difícil ni nada agregarlos, pero te acuerdas de ellos en el momento que estas necesitando reproducir un <em>mp3</em> y no puedes.
+</p>
+</li>
+</ul>
+<h2 id="headline-6">
+Vamos ahora con GNOME
+</h2>
+<p>
+GNOME, ahh. Antes de instalarlo, estaba al tanto del <em>workflow</em> que implica. <em>Actividades</em>, no panel, mínima personalización y el odio que le tienen varias de las celebridades del mundo Linux. Pero al comenzar a usarlo no me topé con ninguna dificultad y comencé a disfrutar de algunas de sus funciones. Es cierto que no tiene la apabullante configuración y personalización de Plasma, y la manera de usarlo es radicalmente diferente a lo que llevo tiempo haciendo, pero tampoco implica reinventar la rueda.
+</p>
+<p>
+Su gestor de archivos, Nautilus, lo encuentro bien, algo limitado en ciertos aspectos, pero hace su trabajo. Las enormes barras de título no me disgustan del todo porque tienen botones dentro volviendolas hasta útiles y no solo decoraciones. Finalmente el <em>overview</em> me gusta, y lo veo hasta práctico.
+</p>
+<p>
+Claro que comencé a echar algunas cosas de menos a los pocos minutos de usarlo. Lo primero, el soporte para <em>tiling</em>, y temo decir que no encontré ninguna extensión o alternativa que me satisfaciera, además de manualmente colocar ventanas en los bordes. Segundo, algunos atajos de teclado no me gustan, y aquí encontré una de mis primeras pegas con GNOME: cuando hablan de poca personalización es en serio, es muy poca, no poder cambiar algunos atajos de teclado me molestó al principio. Eventualmente los cambié junto con otras cosas con <code>dconf</code>, pero ¿por qué no están a la vista? 
+</p>
+<p>
+Rápidamente encontré <a href="https://extensions.gnome.org/#">GNOME extensions</a>, <code>gnome-tweaks</code> y <a href="https://www.gnome-look.org/browse/cat/">Gnome-look</a> y comencé a hacer el escritorio mio… tanto como se pudiera. Descargué temas, edité algunos otros, instalé extensiones de todo tipo y establecí un entorno donde, ahorita, me siento más o menos agusto.
+</p>
+<p>
+<img src="gnome.png" alt="gnome.png" title="gnome.png" />
+</p>
+<p>
+Debo resaltar la ventaja y lo agradable que es trabajar en un entorno de escritorio completo, integrado y moderno, en lugar de los <em>Window Managers</em> modulares, compuesto por piezas separadas. en GNOME (y en Plasma, y en XFCE, y en otros Entornos de Escritorio) se siente como cada programa forma parte de un todo y se comunican entre si. La mayoria de las aplicaciones funcionan correctamente, se muestran como se pensaron que se deberían mostrar y todas sus características funcionan correctamente. Este sentimiento de integración no lo puede otorgar siempre un <em>Window Manager</em>.
+</p>
+<h4 id="headline-7">
+Lo bueno de GNOME
+</h4>
+<h5 id="headline-8">
+La experiencia en general
+</h5>
+<p>
+Me topé con una experiencia buena, fluida, y que eventualmente me terminó agradando. No he notado mayores problemas como crasheos aleatorios o fallas graves del sistema.
+</p>
+<h5 id="headline-9">
+La integración del sistema 
+</h5>
+<p>
+Ya lo he comentado, pero es muy agradable usar un sistema tan integrado. Por ejemplo, puedo acceder a la información de mi celular en el panel, recibo las notificaciones sin problemas, puedo verlas en el centro de notificaciones, y puedo explorar mi celular desde Nautilus como si fuera una memoria flash USB. En dwm, para lograr algo similar, ocuparía varios scripts y la experiencia estaría lejos de ser igual.
+</p>
+<h4 id="headline-10">
+Lo malo de GNOME
+</h4>
+<h5 id="headline-11">
+Demasiado complejo 
+</h5>
+<p>
+Una API que se comunica a través de un Framework, el cual escribe &#34;registros&#34; en el sistema, utilizando rutas complicadas como <code>/org/gnome/mutter/keybindings/</code> para finalmente cambiar un atajo de teclado. ¿Es necesario tanta complicación? ¿No es mejor un simple y sencillo archivo de configuración en <code>$XDG_CONFIG</code> o algun otro lugar? Resulta que GNOME si es configurable y tiene muchas opciones para mover, pero ocultas tras el laberinto que es <code>gsettings</code> y <code>dconf</code>.
+</p>
+<h5 id="headline-12">
+La filosofía de (algunos) desarrolladores y usuarios de GNOME de &#34;no sabes lo que es mejor para tí, así que usa el sistema como viene preinstalado y no le cambies nada&#34;  
+</h5>
+<p>
+He leído muchos comentarios sobre porque usar el sistema como viene por defecto para entender el porqué GNOME 3 es como es y que el <em>workflow</em> completo tome sentido. He leído otros comentarios acerca de como las opciones predeterminadas son perfectas y porque no deberías modificarlas para adaptarlas a tu gusto. He visto incluso comentarios similares en desarrolladores de extensiones que se niegan a añadir características o modificar funciones, a pesar que tienen una gran demanda, porque la &#34;experiencia de usuario&#34; se vería afectada; o dicho de otra manera, porque consideran que el usuario no debería adaptar el sistema a su gusto, sino usarlo al gusto de otro. 
+</p>
+<p>
+Estoy de acuerdo que darle total libertad de configuración al usuario puede terminar en un programa complicado imposible de mantener, o en una experiencia miserable al perderse entre mil opciones triviales. Pero suponer que determinada función es la mejor y negar deliberadamente la oportunidad de cambiarla porque el desarrollador ya eligió lo mejor para tí no creo que sea el acercamiento correcto al diseño de software. Pero ojo, esta es mi opinión, y probablemente esté equivocada.
+</p>
+<h2 id="headline-13">
+Y lo que dicen del entorno, ¿qué tan cierto es?      
+</h2>
+<p>
+Sobre GNOME se dice mucho, que es lento, pesado, inusable, con una métafora tonta y que debería desaparecer. Voy a retomar 5 de los puntos que más veo en internet como crítica a GNOME y a comparitir mi experiencia hata ahora.
+</p>
+<h3 id="headline-14">
+1. Consume demasiados recursos
+</h3>
+<p>
+Comparado con los 200 MB que consume dwm, entonces sí, GNOME es un monstruo que se lleva casi 700 MB de RAM al arranque. Pero aquí entra un detalle: dwm no se ejecutaba solo, debía ejecutar un grupo de programas como panel, servidor de notificaciones, compositor y otros demonios, por lo que la RAM de arranque subía a unos 500 MB aproximadamente,ya no hay tanta diferencia. 
+</p>
+<p>
+Aunque no es solo el arranque, pasados unos minutos el uso de RAM, en espera, se establece alrededor de 1.3 GB. ¡Inaceptable! dirán, pero con mis 8 GB de RAM no es que me afecte mucho. Con dwm, al trabajar de forma normal el uso de RAM se mantenía alrededor de 2.5 GB, mientras que con GNOME se mantiene en unos 3 GB aprox. No he visto que suba a más de esto hasta ahorita mientras que en un par de ocasiones (durante conferencias de Zoom) si noté que con dwm la RAM se iba a más de 6 GB.
+</p>
+<p>
+Aunque consumiera más RAM (y lo hace), no me preocupa mucho ya que tengo suficientes recursos para ello. Me divierte ver como personas con 64 GB de RAM y CPU de 16 núcleos se quejan del consumo de recursos. Eso sí, si tuviera, por decir, 4 GB de RAM, ni loco usaba GNOME.
+</p>
+<h3 id="headline-15">
+2. Su metáfora de escritorio es inusable. 
+</h3>
+<p>
+Siendo honesto, la metáfora de escritorio tradicional la dejé atras hace tiempo con los <em>window managers</em>. Los íconos en el escritorio ya no me interesan, y el no tener barra de tareas o dock no me afecta, pues me acostubré a buscar programas escribiendo su nombre o mediante atajos de teclado. Es más, ya usaba un panel superior que solo hacía la función de informar como el de GNOME.
+</p>
+<p>
+La novedad la encuentro en el botón de Actividades y la <em>overview</em>, los cuales he encontrado bastante agradables. La esquina activa incluso me es cómoda, aunque poco uso el mouse. El menú a pantalla completa me gusta y ya solía usar algo similar con <code>rofi</code>. 
+</p>
+<p>
+Mientras que el cambio de metáfora no me afecta como parece que sí lo hace con otros usuarios, el sistema de ventanas flotantes de un <em>stacking window manager</em> si que me preocupa. Acostumbrado al tiling automático es raro no tener mis ventanas acomodadas automáticamente. 
+</p>
+<p>
+Sin embargo, hace tiempo comencé a notar las limitantes del modelo <em>tiling</em>. En realidad, es usable con máximo 3 ventanas por escritorio virtual, más se vuelven muy pequeñas para decir que son en realidad usables, y si lo que quiero es tenerlas apiladas en el lado derecho esperando a ser llamadas a la acción al lado izquiero, entonces tengo el dock con aplicaciones minimizadas más grande de la historia. Otra limitante está en aquellas ventanas que no quiero ver, como el reproductor de música. Me veo en la obligación de mandarlas a un escritorio vacío lejano para no verlas, una adaptación torpe de minimizar ventanas.
+</p>
+<p>
+Así que, aunque extraño el <em>master and stack</em> comienzo a ver y apreciar las ventanas flotantes, aunque necesito establecer atajos de teclado para acomodarlas con el teclado.
+</p>
+<h3 id="headline-16">
+3. GNOME no es personalizable
+</h3>
+<p>
+Esto es en cierta parte cierto y una molestia. Por defecto, solo se pueden modificar unos cuantos atajos de teclado, el fondo de pantalla y poco más. Pero utilizando <code>gnome-tweaks</code> la personalización llega a un nivel algo más aceptable, permitiendo cambiar íconos, temas y demás configuraciones que sigo sin entender porque GNOME no las incorpora. Los desarrolladores argumentan que haría más complicado mantener el sistema, pero no veo como la opción de mostrar el porcentaje de batería lo haría más complejo de lo que ya es.
+</p>
+<p>
+Una gran variedad de configuraciones se abre también a través de <code>gsettings</code> y su interfaz gráfica <code>dconf</code>, y nuevamente me cuestiono el porqué varias de estas configuraciones, algunas de ellas básicas, no están expuestas al usuario o están tan escondidas.
+</p>
+<p>
+A pesar de todas las molestias, la personalización disponible (con <code>gnome-tweaks</code> y <code>dconf</code>) no está tan mal. Sí, no tiene el increiblemente enorme centro de configuraciones de Plasma 5 o sus increibles extensiones, pero eso es hasta algo bueno. Me gusta que si quiero modificar algo (si se puede modificar) es claro y fácil de encontrar, y no está oculto tras varios menús y pestañas de nombre confuso. En más de una ocasión me he topado en Plasma buscando como cambiar algo para descubrir que estaba en una categoría que nada tiene que ver. En GNOME eso no sucede… porque quizá no puedas cambiarlo. En cuanto a las extensiones, si bien están limitadas en cuanto a alcance, son más útiles, buscan solucionar problemas específicos más que ser &#34;geniales&#34; y eso es bueno, vuelve tu sistema más enfocado a la productividad.
+</p>
+<h3 id="headline-17">
+4. GNOME es lento y las animaciones van trabadas
+</h3>
+<p>
+Esta es una aseveración, creo yo, nacida de las primeras versiones de GNOME 3 donde, tengo entendido, sí que era lento, con animaciones trabadas e imposible trabajar con él. 
+</p>
+<p>
+En mi uso actual, el entorno va como la seda, y tengo unas especificaciones algo humildes. Aunque con ciertos temas (Layan theme, por ejemplo) si sufría ciertos bajones de frames, con el tema Flat Remix no he tenido ningún problema. El entorno va fluído , muy rápido, con casi todas sus animaciones funcionando perfectamente. Entonces, o tengo muy buena suerte, o GNOME no es ni lento ni va trabado como sus detractores se empeñan en decir. 
+</p>
+<h3 id="headline-18">
+5. Las decoraciones de ventanas son enormes. Ah, y Adwaita
+</h3>
+<p>
+En cuanto a su aspecto estético, GNOME es criticado por tener unas decoraciones de ventana ENORMES. Y es cierto, son gigantes. Pero cumplen una función, y no, no es ser usables en tablets; permiten colocar botones dentro de ellas. En lugar de ser solo barras con el título de la ventana y los botones de cerrar/minimizar/maximizar, incluyen botones propios de la aplicación, menús desplegables, interruptores, etc. por lo que no las veo como un desperdicio de espacio sino como una reimplementación que añade utilidad.
+</p>
+<p>
+En cuanto al tema por defecto, Adwaita, no me termina de agradar del todo. Debo decir que antes era feo, enorme, y se mantuvo por muchos años con un estilo anticuado, manteniendo íconos y botones con texturas realistas en la era del diseño plano. Pero hoy día Adwaita no es tan malo, viéndolo con buenos ojos puede ser hasta bonito, aunque su principal objetivo es ser accesible. Sus íconos también recibieron un rediseño acercándolos a un look mucho más moderno. Aún así, sigue sin ser mi favorito.
+</p>
+<p>
+<img src="adwaita.png" alt="adwaita.png" title="adwaita.png" />
+</p>
+<h2 id="headline-19">
+¿Recapacitaré y regresaré al buen camino algún día?
+</h2>
+<p>
+Por el momento, lo dudo. Aunque quisiera pasar el día entero jugando con diferentes entornos, gestores de ventanas y aplicaciones, necesito trabajar y tener mi laptop lista para cuando la ocupe. Ya estoy asentándome en GNOME y Fedora por ahora y no quiero enfrentar dificultades en mi trabajo por estar jugando. Además el problema del sobrecalentamiento se solucionó y en las actividades que hacían que el CPU hirviera a casi 90°C ahora se mantienen a, máximo, 60°C (excepto <em>CS:GO</em> ese sigue sobrecalentando todo, supongo que el <em>gaming</em> no es para mi).
+</p>
+<p>
+Por ello dudo que cambie pronto de entorno o distro, a no ser que otra situación de fuerza mayor, como lo fue el sobrecalentamiento, me obligue a acerlo. Si lo hago quizás regrese a Arch y, dependiendo mi experiencia, me mantenga en GNOME o busque otros entornos como Plasma o Budgie (aunque este último me aburre la idea, pues es un entorno tradicional). Hace poco me interesé por <a href="https://wayfire.org/">Wayfire</a>, un compositor de ventanas para Wayland bastante prometedor con el único detalle de, bueno, ser para Wayland. 
+</p>
+<p>
+Esperemos a ver como resulta mi experiencia con GNOME, que hasta ahora está siendo bastante positiva, antes de volver a pensar en el <em>distro hop</em>.
+</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/linux">linux</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	  <div> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>  Juan Castro |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a>  
+	    
+	    
+	  </div>
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://juan-blog.github.io/es/sitemap.xml</loc>
-    
-      <lastmod>2020-10-07T18:34:22-06:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://juan-blog.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2020-10-07T18:34:22-06:00</lastmod>
-    
-  </sitemap>
-  
+	
+	<sitemap>
+	   	<loc>https://juan-blog.github.io/es/sitemap.xml</loc>
+		
+	   	<lastmod>2020-10-18T22:04:22-06:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://juan-blog.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-10-07T18:34:22-06:00</lastmod>
+		
+	</sitemap>
+	
 </sitemapindex>
