@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://juan-blog.github.io/en/posts/gnome3/</loc>
-    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/gnome3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/posts/gnome3/"
-                />
-  </url>
-  
-  <url>
     <loc>https://juan-blog.github.io/en/</loc>
     <lastmod>2020-10-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -74,6 +59,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://juan-blog.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/gnome3/</loc>
+    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/gnome3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/gnome3/"
                 />
   </url>
   
