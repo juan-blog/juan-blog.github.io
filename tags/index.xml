@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 18:34:22 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://juan-blog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux</title>
+      <link>https://juan-blog.github.io/tags/linux/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dwm,</title>
@@ -18,15 +27,6 @@
       <pubDate>Wed, 07 Oct 2020 18:34:22 -0600</pubDate>
       
       <guid>https://juan-blog.github.io/tags/dwm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://juan-blog.github.io/tags/linux/</link>
-      <pubDate>Wed, 07 Oct 2020 18:34:22 -0600</pubDate>
-      
-      <guid>https://juan-blog.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 18:34:22 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://juan-blog.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://juan-blog.github.io/en/posts/gnome3/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/en/posts/gnome3/</guid>
+      <description>A little over a week ago I made a radical decision: I downloaded the newest version of Fedora 32 and installed it on my system. I left behind the suckless universe of dwm, the minimalism of Arch Linux, and the workflow based on terminal applications and automatic window layout to make way for a totally different system, bloated, and with a totally different workflow. What the hell was going through my head when I did that?</description>
+    </item>
     
     <item>
       <title>How to use dwm without dying in the attempt</title>
