@@ -63,197 +63,163 @@
 		<div class="markdown">
 			
 <p>
-<a href="https://dwm.suckless.org">dwm</a> is a somewhat complicated window manager to start with. As a product of the <em>suckless</em> community it adheres to its <a href="https://suckless.org/philosophy/">philosophy</a> and tries to be minimalist, frugal and limited to only 2000 lines of source code. Due to this, when downloading dwm we will find little or no documentation (documentation is the source code), and a barely usable window manager, which lacks several of the basic options we would expect to have. 
-</p>
+<a href="https://dwm.suckless.org">dwm</a> is a somewhat complicated window manager to start with. As a product of the <em>suckless</em> community it adheres to its <a href="https://suckless.org/philosophy/">philosophy</a> and tries to be minimalist, frugal and limited to only 2000 lines of source code. Due to this, when downloading dwm we will find little or no documentation (documentation is the source code), and a barely usable window manager, which lacks several of the basic options we would expect to have. </p>
 <p>
-Despite this, dwm has a great community behind it that constantly develops new features, some of which are useless and others that you will not see in other window managers and that will make you stay in dwm. In this post we will see some tips and examples that will allow us to get into dwm and configure it to be our daily use environment.
-</p>
+Despite this, dwm has a great community behind it that constantly develops new features, some of which are useless and others that you will not see in other window managers and that will make you stay in dwm. In this post we will see some tips and examples that will allow us to get into dwm and configure it to be our daily use environment.</p>
 <p>
-I must say that this post is not, nor pretends to be, a complete guide to dwm, or a user manual, but small ideas and tips based on my own experience and use, so do not expect me to explain in detail how the program works or what each of the functions does.Instead, I intend to give a north to those who want to try dwm or already tried it but looked terrified while <code>make</code> filled their screen with red errors after trying to apply a patch.
-</p>
+I must say that this post is not, nor pretends to be, a complete guide to dwm, or a user manual, but small ideas and tips based on my own experience and use, so do not expect me to explain in detail how the program works or what each of the functions does.Instead, I intend to give a north to those who want to try dwm or already tried it but looked terrified while <code>make</code> filled their screen with red errors after trying to apply a patch.</p>
 <p>
-<img src="dwm-rice.png" alt="dwm-rice.png" title="dwm-rice.png" />
-</p>
+<img src="dwm-rice.png" alt="dwm-rice.png" title="dwm-rice.png" /></p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 Instalation
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>The first thing to consider: there is no point in downloading dwm from the package manager of our distribution. Why? Because all the configuration is done by modifying the source code. We can do it, yes, but we will not have any opportunity to customize it to our taste.</p>
 <p>
-The first thing to consider: there is no point in downloading dwm from the package manager of our distribution. Why? Because all the configuration is done by modifying the source code. We can do it, yes, but we will not have any opportunity to customize it to our taste.
-</p>
-<p>
-The easiest way to download dwm is to use git:
-</p>
+The easiest way to download dwm is to use git:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://git.suckless.org/git</code></pre></div>
 </div>
 <p>
-This will download the latest version of dwm to our device. It is highly recommended to put this repository under our own version control system, because we are going to ruin it, several times.
-</p>
+This will download the latest version of dwm to our device. It is highly recommended to put this repository under our own version control system, because we are going to ruin it, several times.</p>
 <p>
-To install dwm just execute in terminal the following:
-</p>
+To install dwm just execute in terminal the following:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">make
 sudo make install</code></pre></div>
 </div>
 <p>
-I recommend to download also <a href="https://suckless.org/dmenu">dmenu</a> to be able to launch our applications (we can change it to <a href="https://github.com/davatorium/rofi">rofi</a> later if we want) and <a href="https://st.suckless.org/">st</a>, the terminal that uses dwm by default.
-</p>
+I recommend to download also <a href="https://suckless.org/dmenu">dmenu</a> to be able to launch our applications (we can change it to <a href="https://github.com/davatorium/rofi">rofi</a> later if we want) and <a href="https://st.suckless.org/">st</a>, the terminal that uses dwm by default.</p>
 <p>
-There are two ways to launch dwm: with a window manager or with <code>startx</code>. 
-</p>
+There are two ways to launch dwm: with a window manager or with <code>startx</code>. </p>
 <ul>
 <li>
-<p>
-Using a window manager:*
-</p>
+<p>Using a window manager:*</p>
 </li>
 </ul>
-<p>
-First we will need to create a new desktop entry for dwm:
-</p>
+<p>First we will need to create a new desktop entry for dwm:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo touch /usr/share/xsessions/dwm.desktop</code></pre></div>
 </div>
 <p>
-And inside that file place the following (remember to run the editor with root permissions):
-</p>
+And inside that file place the following (remember to run the editor with root permissions):</p>
 <div class="src src-text">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Desktop Entry
 Name=DWM
 Exec=dwm</code></pre></div>
 </div>
 <p>
-With that dwm should appear in the option list of our display manager.
-</p>
+With that dwm should appear in the option list of our display manager.</p>
 <ul>
 <li>
-<p>
-Using startx:*
-</p>
+<p>Using startx:*</p>
 </li>
 </ul>
-<p>
-The minimalist and my favorite option is to run it directly from the terminal with startx. To do this we create, if it does not already exist, the file <code>~/.xinitrc</code> and inside it we place
-</p>
+<p>The minimalist and my favorite option is to run it directly from the terminal with startx. To do this we create, if it does not already exist, the file <code>~/.xinitrc</code> and inside it we place</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">exec dwm</code></pre></div>
 </div>
 <p>
-And that&#39;s all, now from a TTY we run <code>startx</code> and dwm will run. We can use the <code>.xinitrc</code> file to set the programs we want to run at the beginning too.
-</p>
+And that&#39;s all, now from a TTY we run <code>startx</code> and dwm will run. We can use the <code>.xinitrc</code> file to set the programs we want to run at the beginning too.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 First steps
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
-When starting dwm we will have: a panel with the numbers 1 to 9 at the top and the letters &#34;dwm&#34;, and a black background. Nice. 
-</p>
+When starting dwm we will have: a panel with the numbers 1 to 9 at the top and the letters &#34;dwm&#34;, and a black background. Nice. </p>
 <p>
-<img src="dwm-start.png" alt="dwm-start.png" title="dwm-start.png" />
-</p>
+<img src="dwm-start.png" alt="dwm-start.png" title="dwm-start.png" /></p>
 <ul>
 <li>
-<p>
-<strong>NOTE:</strong> If nothing opens is because we don&#39;t have installed <code>st</code>, the default terminal of dwm.
-</p>
+<p><strong>NOTE:</strong> If nothing opens is because we don&#39;t have installed <code>st</code>, the default terminal of dwm.</p>
 </li>
 </ul>
+<p>Let&#39;s start by opening several terminals, that can be done by pressing <code>Alt + Shift + Enter</code>. We will see that the most recent window is arranged on the left side of the screen occupying a little more than half, while the rest of the windows occupy the rest arranged on top of each other. This arrangement is known as &#34;master &amp; stack&#34; or simply &#34;tile&#34;. We can focus the following windows with <code>Alt + j</code> and <code>Alt + k</code> (vim-keys) or with the mouse. If we have <code>dmenu</code> installed, <code>Alt + p</code> will open a nice menu at the top of the screen with our applications installed. If we press <code>Alt + &lt;number&gt;</code> we change the virtual desktop, or &#34;tag&#34; according to the dwm jargon. Ready! We are already using dwm, enjoy it!</p>
 <p>
-Let&#39;s start by opening several terminals, that can be done by pressing <code>Alt + Shift + Enter</code>. We will see that the most recent window is arranged on the left side of the screen occupying a little more than half, while the rest of the windows occupy the rest arranged on top of each other. This arrangement is known as &#34;master &amp; stack&#34; or simply &#34;tile&#34;. We can focus the following windows with <code>Alt + j</code> and <code>Alt + k</code> (vim-keys) or with the mouse. If we have <code>dmenu</code> installed, <code>Alt + p</code> will open a nice menu at the top of the screen with our applications installed. If we press <code>Alt + &lt;number&gt;</code> we change the virtual desktop, or &#34;tag&#34; according to the dwm jargon. Ready! We are already using dwm, enjoy it!
-</p>
-<p>
-No, it&#39;s not true, the truth is that this is almost unusable: the <code>Alt</code> key is used for many applications so it&#39;s a bad idea to use it as a modifier key, the terminals have a horrible space between them, the panel is practically useless, we have no wallpaper and I don&#39;t like keyboard shortcuts. Besides that, I miss the &#34;fibbonacci&#34; layout of <code>bspwm</code>. Let&#39;s see how we can fix it.
-</p>
+No, it&#39;s not true, the truth is that this is almost unusable: the <code>Alt</code> key is used for many applications so it&#39;s a bad idea to use it as a modifier key, the terminals have a horrible space between them, the panel is practically useless, we have no wallpaper and I don&#39;t like keyboard shortcuts. Besides that, I miss the &#34;fibbonacci&#34; layout of <code>bspwm</code>. Let&#39;s see how we can fix it.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 The configuration file
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
-Inside the dwm source code directory we find several files. If we know C and we want to study the dwm structure, go ahead and read them; otherwise, we will only focus on the <code>config.h.def</code> file. This file is the template for our configuration file and the one that will be modified when we start adding patches.
-</p>
+Inside the dwm source code directory we find several files. If we know C and we want to study the dwm structure, go ahead and read them; otherwise, we will only focus on the <code>config.h.def</code> file. This file is the template for our configuration file and the one that will be modified when we start adding patches.</p>
 <p>
-Let&#39;s start by copying this file to remove that &#34;def&#34; ending:
-</p>
+Let&#39;s start by copying this file to remove that &#34;def&#34; ending:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp config.h.def config.h</code></pre></div>
 </div>
 <p>
-Open the <code>config.h</code> file in your favorite text editor and analyze it. It has comments everywhere so it should be very easy to understand. Here I will only mention some changes that I recommend to make immediately:
-</p>
+Open the <code>config.h</code> file in your favorite text editor and analyze it. It has comments everywhere so it should be very easy to understand. Here I will only mention some changes that I recommend to make immediately:</p>
 <ul>
 <li>
-<p>
-<code>static const float mfact = 0.55;</code>: This line determines how much of the screen the &#34;master&#34; window takes up. By default, it takes a little more than half. To make it take up exactly half, change the value of this variable to <code>0.5</code>.
-</p>
+<p><code>static const float mfact = 0.55;</code>: This line determines how much of the screen the &#34;master&#34; window takes up. By default, it takes a little more than half. To make it take up exactly half, change the value of this variable to <code>0.5</code>.</p>
 </li>
 <li>
-<p>
-<code>static const int resizehints = 1;</code>: This line causes us to see weird spaces between the terminals and some applications like <code>emacs</code>. Changing it to <code>0</code> fixes the problem.
-</p>
+<p><code>static const int resizehints = 1;</code>: This line causes us to see weird spaces between the terminals and some applications like <code>emacs</code>. Changing it to <code>0</code> fixes the problem.</p>
 </li>
 <li>
-<p>
-<code>#define MODKEY Mod1Mask</code>: Defines which key we will use as a modifier. Personally I prefer to use the <code>super</code> key (the Windows key), so I change this line to <code>Mod4Mask</code>. 
-</p>
+<p><code>#define MODKEY Mod1Mask</code>: Defines which key we will use as a modifier. Personally I prefer to use the <code>super</code> key (the Windows key), so I change this line to <code>Mod4Mask</code>. </p>
 </li>
 <li>
-<p>
-<code>static const char *termcmd[] = { &#34;st&#34;, NULL };</code> If we want to use another terminal instead of &#34;<code>st</code> this is the line we should modify, just change where it says &#34;st&#34; by the name of the terminal we want, for example <code>static const char *termcmd[] = { &#34;alacritty&#34;, NULL };</code>.
-</p>
+<p><code>static const char *termcmd[] = { &#34;st&#34;, NULL };</code> If we want to use another terminal instead of &#34;<code>st</code> this is the line we should modify, just change where it says &#34;st&#34; by the name of the terminal we want, for example <code>static const char *termcmd[] = { &#34;alacritty&#34;, NULL };</code>.</p>
 </li>
 <li>
-<p>
-All the array <code>static Key keys[]</code>: Here are declared the keyboard shortcuts. We have to check them to know what we can do and how. If we want to change some shortcut, this is the part that we must review.
-</p>
+<p>All the array <code>static Key keys[]</code>: Here are declared the keyboard shortcuts. We have to check them to know what we can do and how. If we want to change some shortcut, this is the part that we must review.</p>
 </li>
 </ul>
-<p>
-Once our modifications are finished, we will have to compile and install the program again executing <code>make</code> and <code>sudo make install</code>. After that, we have to exit dwm (by default, <code>Mod + Shift + q</code>, although you could also run <code>killall dwm</code> in a terminal) and come back in to see the changes.
-</p>
+<p>Once our modifications are finished, we will have to compile and install the program again executing <code>make</code> and <code>sudo make install</code>. After that, we have to exit dwm (by default, <code>Mod + Shift + q</code>, although you could also run <code>killall dwm</code> in a terminal) and come back in to see the changes.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 How to patch dwm and not die in the attempt
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <p>
-In fact, you will fail the first few times, so I recommend that you have your dwm folder under a version control system.
-</p>
+In fact, you will fail the first few times, so I recommend that you have your dwm folder under a version control system.</p>
 <p>
-By default, dwm lacks many features that we can find in other window managers as basic options. How can we add them? With the use of patches.
-</p>
+By default, dwm lacks many features that we can find in other window managers as basic options. How can we add them? With the use of patches.</p>
 <p>
-Patches are files with <code>.diff</code> extension, and basically indicate what changes we should make to a file. The lines that start with a &#34;+&#34; are lines that we add, and those that start with a &#34;-&#34; are lines that we delete. You can automate the process with the command <code>patch -p1 &lt; ~/path/to/patch.diff</code>. 
-</p>
+Patches are files with <code>.diff</code> extension, and basically indicate what changes we should make to a file. The lines that start with a &#34;+&#34; are lines that we add, and those that start with a &#34;-&#34; are lines that we delete. You can automate the process with the command <code>patch -p1 &lt; ~/path/to/patch.diff</code>. </p>
 <p>
-In the [[<a href="https://dwm.suckless.org/patches][dwm&#39;s">https://dwm.suckless.org/patches][dwm&#39;s</a> official page] there are a lot of patches that we can try, some useful, some quite specific for the way someone else works. I invite you to visit the page and start downloading patches with the options you want to have.
-</p>
+In the [[<a href="https://dwm.suckless.org/patches][dwm&#39;s">https://dwm.suckless.org/patches][dwm&#39;s</a> official page] there are a lot of patches that we can try, some useful, some quite specific for the way someone else works. I invite you to visit the page and start downloading patches with the options you want to have.</p>
 <p>
-Remember, to apply the patch you only need to move to the dwm folder and run <code>patch -p1 &lt; ~/path/to/patch.diff</code>.
-</p>
+Remember, to apply the patch you only need to move to the dwm folder and run <code>patch -p1 &lt; ~/path/to/patch.diff</code>.</p>
+<div id="outline-container-headline-5" class="outline-5">
 <h5 id="headline-5">
 Resolving conflicts with patches
 </h5>
+<div id="outline-text-headline-5" class="outline-text-5">
 <p>
-Patches modify the source code, and are born from other people&#39;s files. These other people don&#39;t necessarily have the same patches applied to them as you do, so when you start patching, you will notice that the <code>patch</code> command throws errors in some files. So what do we do? It&#39;s our turn to edit manually.
-</p>
+Patches modify the source code, and are born from other people&#39;s files. These other people don&#39;t necessarily have the same patches applied to them as you do, so when you start patching, you will notice that the <code>patch</code> command throws errors in some files. So what do we do? It&#39;s our turn to edit manually.</p>
 <p>
-When a patch application fails, a file with the extension <code>.rej</code> is generated, for example <code>dwm.c.rej</code> which contains all the unmade changes. It will be our job to review that file and copy the corresponding lines by hand. This happens because the patch expects the line to be modified to be in a certain place, but since we have already modified the code with other patches or, well, the author has other patches applied, <code>patch</code> is not able to find the line to be modified and throws errors.
-</p>
+When a patch application fails, a file with the extension <code>.rej</code> is generated, for example <code>dwm.c.rej</code> which contains all the unmade changes. It will be our job to review that file and copy the corresponding lines by hand. This happens because the patch expects the line to be modified to be in a certain place, but since we have already modified the code with other patches or, well, the author has other patches applied, <code>patch</code> is not able to find the line to be modified and throws errors.</p>
 <p>
-Note also that some patches change the structure of some functions and declarations in order to work. In those cases you will have to find the logic to add the necessary changes. In most cases this does not happen, but there are complex patches that are not compatible with other patches.
-</p>
+Note also that some patches change the structure of some functions and declarations in order to work. In those cases you will have to find the logic to add the necessary changes. In most cases this does not happen, but there are complex patches that are not compatible with other patches.</p>
 <p>
-Another aspect to take into account is that patches modify the <code>config.h.def</code> file and where we have our configuration is in <code>config.h</code>, so it&#39;s up to you to move the corresponding lines to the correct file.
-</p>
+Another aspect to take into account is that patches modify the <code>config.h.def</code> file and where we have our configuration is in <code>config.h</code>, so it&#39;s up to you to move the corresponding lines to the correct file.</p>
 <p>
-Finally, when you have applied the patches you want, you need to recompile dwm by running <code>make</code>, <code>sudo make install</code>, and restart to see your changes applied.
-</p>
+Finally, when you have applied the patches you want, you need to recompile dwm by running <code>make</code>, <code>sudo make install</code>, and restart to see your changes applied.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 And the top bar, is it good for anything?
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <p>
-dwm comes with a built-in panel at the top. We can move it to the bottom by changing the line <code>static const int topbar = 1;</code> to a zero. This panel shows us the desktops (tags), the current layout, the name of the active window and, on the other side, the version of dwm we have.
-</p>
+dwm comes with a built-in panel at the top. We can move it to the bottom by changing the line <code>static const int topbar = 1;</code> to a zero. This panel shows us the desktops (tags), the current layout, the name of the active window and, on the other side, the version of dwm we have.</p>
 <p>
-This last text can be modified with the command <code>xsetroot -name</code>. If we run <code>xsetroot -name &#34;Testing the panel&#34;</code> we will see how the panel text changes to <code>Testing the panel</code>. Did we understand? We can generate a simple script to display the information, <em>á la</em> lemonbar:
-</p>
+This last text can be modified with the command <code>xsetroot -name</code>. If we run <code>xsetroot -name &#34;Testing the panel&#34;</code> we will see how the panel text changes to <code>Testing the panel</code>. Did we understand? We can generate a simple script to display the information, <em>á la</em> lemonbar:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">  <span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
       xsetroot -name <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
@@ -261,60 +227,70 @@ This last text can be modified with the command <code>xsetroot -name</code>. If 
   <span style="color:#66d9ef">done</span>-</code></pre></div>
 </div>
 <p>
-With that we will have a simple clock on our panel. Your script can be as long as you want, and if you have used dzen or polybar, it should be easy to make your script. If not, I have two alternatives to have a nice and useful panel.
-</p>
+With that we will have a simple clock on our panel. Your script can be as long as you want, and if you have used dzen or polybar, it should be easy to make your script. If not, I have two alternatives to have a nice and useful panel.</p>
+<div id="outline-container-headline-7" class="outline-5">
 <h5 id="headline-7">
 Using dwmblocks
 </h5>
+<div id="outline-text-headline-7" class="outline-text-5">
 <p>
-<a href="https://github.com/torrinfail/dwmblocks">dwmblocks</a> is a project inspired by i3blocks, and became popular after Luke Smith started using it. True to the nature of dwm, it requires recompiling every time we edit something, and allows us to add independent modules that update separately, so we don&#39;t have the text of the volume updating every second because of the clock. The modules are bash scripts or in any language that gives us a text to STDOUT.
-</p>
+<a href="https://github.com/torrinfail/dwmblocks">dwmblocks</a> is a project inspired by i3blocks, and became popular after Luke Smith started using it. True to the nature of dwm, it requires recompiling every time we edit something, and allows us to add independent modules that update separately, so we don&#39;t have the text of the volume updating every second because of the clock. The modules are bash scripts or in any language that gives us a text to STDOUT.</p>
 <p>
-Personally I recommend the <a href="https://github.com/ashish-yadav11/dwmblocks">ashish-yadav11 fork</a>, which is color compatible, has clickability (both functions require a patch, included in the repository) and a binary called <code>sigdwmblocks</code> that allows us to send an update signal to each module separately. So if you want, for example, to update the volume module and you assigned in <code>blocks.h</code> the signal &#34;1&#34;, you can run <code>sigdwmblocks 1</code> in the terminal and the volume module will be updated. We can add this to our keyboard shortcuts, so if you want to increase the volume and have the module updated when you press the button, you can add a shortcut like this: <code>pamixer -i 2; sigdwmblocks 1</code>.
-</p>
+Personally I recommend the <a href="https://github.com/ashish-yadav11/dwmblocks">ashish-yadav11 fork</a>, which is color compatible, has clickability (both functions require a patch, included in the repository) and a binary called <code>sigdwmblocks</code> that allows us to send an update signal to each module separately. So if you want, for example, to update the volume module and you assigned in <code>blocks.h</code> the signal &#34;1&#34;, you can run <code>sigdwmblocks 1</code> in the terminal and the volume module will be updated. We can add this to our keyboard shortcuts, so if you want to increase the volume and have the module updated when you press the button, you can add a shortcut like this: <code>pamixer -i 2; sigdwmblocks 1</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-5">
 <h5 id="headline-8">
 Using Polybar
 </h5>
+<div id="outline-text-headline-8" class="outline-text-5">
 <p>
-Not long ago, <a href="https://github.com/mihirlad55">mihirlad55</a> developed a project that allows us to use Polybar as the dwm panel. For this we need to apply some patches: <code>dwm-ipc</code>, <code>anybar</code> and install its <a href="https://github.com/mihirlad55/polybar-dwm-module">polybar fork with dwm module</a>. You can find more information about how to use it in the module link. I have tested it and it works quite well, plus it keeps all the special dwm functions related to the tags. A <a href="https://github.com/polybar/polybar/pull/2151">pull request</a> was sent to the Polybar team, and it is still open, which means that there are possibilities that this will become an official Polybar module.
-</p>
+Not long ago, <a href="https://github.com/mihirlad55">mihirlad55</a> developed a project that allows us to use Polybar as the dwm panel. For this we need to apply some patches: <code>dwm-ipc</code>, <code>anybar</code> and install its <a href="https://github.com/mihirlad55/polybar-dwm-module">polybar fork with dwm module</a>. You can find more information about how to use it in the module link. I have tested it and it works quite well, plus it keeps all the special dwm functions related to the tags. A <a href="https://github.com/polybar/polybar/pull/2151">pull request</a> was sent to the Polybar team, and it is still open, which means that there are possibilities that this will become an official Polybar module.</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-5">
 <h5 id="headline-9">
 Other methods
 </h5>
-<p>
-<a href="https://dwm.suckless.org/status_monitor/">The dwm page</a> lists more projects for panels, some of them written in C, some in Rust, and some more in Go. You can take a look at them if you like.
-</p>
+<div id="outline-text-headline-9" class="outline-text-5">
+<p><a href="https://dwm.suckless.org/status_monitor/">The dwm page</a> lists more projects for panels, some of them written in C, some in Rust, and some more in Go. You can take a look at them if you like.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
 <h3 id="headline-10">
 Tips and recommendations 
 </h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<div id="outline-container-headline-11" class="outline-5">
 <h5 id="headline-11">
 If the patch does not apply, and it becomes too complicated to apply manually, leave it alone
 </h5>
-<p>
-Sometimes the patches conflict with others we have applied, and if we don&#39;t know how dwm works or we are not masters of C, we will end up breaking the program. If you don&#39;t know what you&#39;re doing, it&#39;s better to leave it at that.
-</p>
+<div id="outline-text-headline-11" class="outline-text-5">
+<p>Sometimes the patches conflict with others we have applied, and if we don&#39;t know how dwm works or we are not masters of C, we will end up breaking the program. If you don&#39;t know what you&#39;re doing, it&#39;s better to leave it at that.</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-5">
 <h5 id="headline-12">
 Keep your own build on github or some similar site
 </h5>
-<p>
-Not only will it allow you to share it, but you will have a cloud backup of your build and changes made. This way you can go back to a previous version if you wish.
-</p>
+<div id="outline-text-headline-12" class="outline-text-5">
+<p>Not only will it allow you to share it, but you will have a cloud backup of your build and changes made. This way you can go back to a previous version if you wish.</p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-5">
 <h5 id="headline-13">
 How to avoid rebooting the PC every time you recompile
 </h5>
-<p>
-Every time you change the slightest thing in dwm you need to recompile and reboot to see your changes applied. This can drive anyone crazy. Here is the solution.
-</p>
+<div id="outline-text-headline-13" class="outline-text-5">
+<p>Every time you change the slightest thing in dwm you need to recompile and reboot to see your changes applied. This can drive anyone crazy. Here is the solution.</p>
 <ul>
 <li>
-<p>
-If you use a screen manager: There is a patch called <a href="https://dwm.suckless.org/patches/restartsig/">restartsig</a> which adds a new keyboard shortcut to reboot dwm. You can run it every time you recompile dwm.
-</p>
+<p>If you use a screen manager: There is a patch called <a href="https://dwm.suckless.org/patches/restartsig/">restartsig</a> which adds a new keyboard shortcut to reboot dwm. You can run it every time you recompile dwm.</p>
 </li>
 <li>
-<p>
-If you use startx: The easiest way is to replace the line that says <code>exec dwm</code> in your <code>.xinitrc</code> with the following:
-</p>
+<p>If you use startx: The easiest way is to replace the line that says <code>exec dwm</code> in your <code>.xinitrc</code> with the following:</p>
 </li>
 </ul>
 <div class="src src-bash">
@@ -323,14 +299,15 @@ If you use startx: The easiest way is to replace the line that says <code>exec d
 donate</code></pre></div>
 </div>
 <p>
-To restart dwm just run <code>killall dwm</code> and it will restart. If you want to exit the session, run <code>killall xinit</code>.
-</p>
+To restart dwm just run <code>killall dwm</code> and it will restart. If you want to exit the session, run <code>killall xinit</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-5">
 <h5 id="headline-14">
 Avoid using <code>sudo</code> to install dwm
 </h5>
-<p>
-Having to reinstall with <code>sudo</code> permissions every time can also become annoying. If you want dwm to be installed locally with your user, you can edit the dwm <code>Makefile</code>, in the install section, and change it to the following:
-</p>
+<div id="outline-text-headline-14" class="outline-text-5">
+<p>Having to reinstall with <code>sudo</code> permissions every time can also become annoying. If you want dwm to be installed locally with your user, you can edit the dwm <code>Makefile</code>, in the install section, and change it to the following:</p>
 <div class="src src-makefile">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">install</span><span style="color:#f92672">:</span> all
 	mkdir -p ~/.local
@@ -340,289 +317,280 @@ Having to reinstall with <code>sudo</code> permissions every time can also becom
 </code></pre></div>
 </div>
 <p>
-This will not only install dwm in your local folder, but also restart dwm automatically every time you recompile. For this to work you must add the path <code>~.local/</code> to your <code>$PATH</code> adding to your <code>.bashrc</code> or <code>-zshrc</code>
-</p>
+This will not only install dwm in your local folder, but also restart dwm automatically every time you recompile. For this to work you must add the path <code>~.local/</code> to your <code>$PATH</code> adding to your <code>.bashrc</code> or <code>-zshrc</code></p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.local&#34;</span>
 export PATH</code></pre></div>
 </div>
 <p>
-<strong>NOTE:</strong> Be sure to manually uninstall or delete the binary in <code>/usr/bin/</code>, otherwise the system will get confused about which binary to run.
-</p>
+<strong>NOTE:</strong> Be sure to manually uninstall or delete the binary in <code>/usr/bin/</code>, otherwise the system will get confused about which binary to run.</p>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-5">
 <h5 id="headline-15">
 Keep your own build, don&#39;t use other people&#39;s
 </h5>
-<p>
-Other people can add things you don&#39;t want and you won&#39;t be able to remove them because they are an integral part of their system. Get inspired by the system of others to make your own.
-</p>
+<div id="outline-text-headline-15" class="outline-text-5">
+<p>Other people can add things you don&#39;t want and you won&#39;t be able to remove them because they are an integral part of their system. Get inspired by the system of others to make your own.</p>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-5">
 <h5 id="headline-16">
 Take advantage of the tags
 </h5>
-<p>
-dwm does not use virtual desktops, it uses tags. Instead of having a set of virtual desktops where you can place your windows, you have a set of tags that you can assign to your windows. Although they seem to be the same, tags allow you to do things like show your windows in a certain number of tags at once (in contrast to desktops that only allow you to see one window on the current desktop or all of them [sticky]), display several tags at once or disable tags for certain windows.  I recommend that you try this feature and see if it takes place in your workflow.
-</p>
+<div id="outline-text-headline-16" class="outline-text-5">
+<p>dwm does not use virtual desktops, it uses tags. Instead of having a set of virtual desktops where you can place your windows, you have a set of tags that you can assign to your windows. Although they seem to be the same, tags allow you to do things like show your windows in a certain number of tags at once (in contrast to desktops that only allow you to see one window on the current desktop or all of them [sticky]), display several tags at once or disable tags for certain windows.  I recommend that you try this feature and see if it takes place in your workflow.</p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-5">
 <h5 id="headline-17">
 Use <code>.xinitrc</code> and <code>.xprofile</code> to start your programs automatically 
 </h5>
-<p>
-Surely you want some programs to start automatically together with dwm, like your wallpaper or some daemons. You can start them automatically by adding them to your <code>.xinitrc</code> if you use <code>startx</code>, or to your <code>.xprofile</code> if you use a display manager:
-</p>
+<div id="outline-text-headline-17" class="outline-text-5">
+<p>Surely you want some programs to start automatically together with dwm, like your wallpaper or some daemons. You can start them automatically by adding them to your <code>.xinitrc</code> if you use <code>startx</code>, or to your <code>.xprofile</code> if you use a display manager:</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nitrogen --restore &amp;
 emacs --daemon &amp;
 picom &amp;</code></pre></div>
 </div>
 <p>
-       Remember to add all that before the dwm run line.
-</p>
+       Remember to add all that before the dwm run line.</p>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-5">
 <h5 id="headline-18">
 Don&#39;t be afraid to use &#34;bloated&#34; programs
 </h5>
-<p>
-Using dwm does not force you to use only programs that share the <em>suckless</em> philosophy. If you want or need to use less minimalist programs like <code>rofi</code>, <code>firefox</code>, <code>alacritty</code>, <code>Systemd</code> or <code>Emacs</code>, go ahead. It&#39;s your system, not other people&#39;s.
-</p>
+<div id="outline-text-headline-18" class="outline-text-5">
+<p>Using dwm does not force you to use only programs that share the <em>suckless</em> philosophy. If you want or need to use less minimalist programs like <code>rofi</code>, <code>firefox</code>, <code>alacritty</code>, <code>Systemd</code> or <code>Emacs</code>, go ahead. It&#39;s your system, not other people&#39;s.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-3">
 <h3 id="headline-19">
 Programs to accompany dwm
 </h3>
+<div id="outline-text-headline-19" class="outline-text-3">
 <p>
-dwm is only in charge of showing windows. Surely you want menus, terminals, and nice programs to show in your screenshots for r/unixporn. Here is my list of programs that I use daily with dwm or I have used in the past. Note that some are not necessarily minimalist, but they do their job quite well.
-</p>
+dwm is only in charge of showing windows. Surely you want menus, terminals, and nice programs to show in your screenshots for r/unixporn. Here is my list of programs that I use daily with dwm or I have used in the past. Note that some are not necessarily minimalist, but they do their job quite well.</p>
+<div id="outline-container-headline-20" class="outline-5">
 <h5 id="headline-20">
 Terminals
 </h5>
+<div id="outline-text-headline-20" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://st.suckless.org/">st</a>: The terminal developed by the suckless community. It follows the same design lines as dwm, so if you want very extravagant functions or some basic ones, you will have to patch.
-</p>
+<p><a href="https://st.suckless.org/">st</a>: The terminal developed by the suckless community. It follows the same design lines as dwm, so if you want very extravagant functions or some basic ones, you will have to patch.</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/alacritty/alacritty">Alacritty</a>: The self-called fastest terminal in existence thanks to its GPU acceleration.  It is good and brings many interesting options.
-</p>
+<p><a href="https://github.com/alacritty/alacritty">Alacritty</a>: The self-called fastest terminal in existence thanks to its GPU acceleration.  It is good and brings many interesting options.</p>
 </li>
 <li>
-<p>
-xfce4-terminal/lxterminal: The XFCE4 and LXDE terminals are good terminals. Both have graphic interfaces to configure them.
-</p>
+<p>xfce4-terminal/lxterminal: The XFCE4 and LXDE terminals are good terminals. Both have graphic interfaces to configure them.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-5">
 <h5 id="headline-21">
 Menus
 </h5>
+<div id="outline-text-headline-21" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://tools.suckless.org/dmenu/">dmenu</a>: The dynamic menu, also product of suckless.It allows you to create graphic menus using STDOUT, which makes it perfect for scripting.  It also incorporates a script called <code>dmenu_run</code> that is usually used as an application launcher.
-</p>
+<p><a href="https://tools.suckless.org/dmenu/">dmenu</a>: The dynamic menu, also product of suckless.It allows you to create graphic menus using STDOUT, which makes it perfect for scripting.  It also incorporates a script called <code>dmenu_run</code> that is usually used as an application launcher.</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/davatorium/rofi">rofi</a>: A much more complete menu. It includes a menu to launch applications, a window switcher, a menu for ssh and a complete replacement for dmenu. It is also very customizable.
-</p>
+<p><a href="https://github.com/davatorium/rofi">rofi</a>: A much more complete menu. It includes a menu to launch applications, a window switcher, a menu for ssh and a complete replacement for dmenu. It is also very customizable.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-5">
 <h5 id="headline-22">
 Compositor
 </h5>
+<div id="outline-text-headline-22" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://github.com/yshui/picom">Picom</a>: It allows us to have shadows, transparencies and an environment that is (almost) free of /tearing.
-</p>
+<p><a href="https://github.com/yshui/picom">Picom</a>: It allows us to have shadows, transparencies and an environment that is (almost) free of /tearing.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-23" class="outline-5">
 <h5 id="headline-23">
 Notification server
 </h5>
+<div id="outline-text-headline-23" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://dunst-project.org/">dunst</a>: A very customizable notification server, includes interesting functions such as displaying images, pango markup, and can receive notifications from D-bus or with libnotify (<code>notify-send</code>). 
-</p>
+<p><a href="https://dunst-project.org/">dunst</a>: A very customizable notification server, includes interesting functions such as displaying images, pango markup, and can receive notifications from D-bus or with libnotify (<code>notify-send</code>). </p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-5">
 <h5 id="headline-24">
 Wallpapers
 </h5>
+<div id="outline-text-headline-24" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://github.com/l3ib/nitrogen/">Nitrogen</a>: A graphical interface for choosing wallpaper. When you restart you need to reload the wallpaper, this can be done by running <code>nitrogen --restore</code>.
-</p>
+<p><a href="https://github.com/l3ib/nitrogen/">Nitrogen</a>: A graphical interface for choosing wallpaper. When you restart you need to reload the wallpaper, this can be done by running <code>nitrogen --restore</code>.</p>
 </li>
 <li>
-<p>
-<a href="https://feh.finalrewind.org/">feh</a>: An image viewer that also incorporates the option to choose wallpapers. For it you only must execute in the terminal <code>feh --bg-scale \/path/to/image.file</code>. When you restart you need to reload the wallpaper, this can be done by running ~~/.fehbg &amp;#.
-</p>
+<p><a href="https://feh.finalrewind.org/">feh</a>: An image viewer that also incorporates the option to choose wallpapers. For it you only must execute in the terminal <code>feh --bg-scale \/path/to/image.file</code>. When you restart you need to reload the wallpaper, this can be done by running ~~/.fehbg &amp;#.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-5">
 <h5 id="headline-25">
 Video Player
 </h5>
+<div id="outline-text-headline-25" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://mpv.io/">mpv</a>: A light and simple, but powerful multimedia player.
-</p>
+<p><a href="https://mpv.io/">mpv</a>: A light and simple, but powerful multimedia player.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-5">
 <h5 id="headline-26">
 Image viewer:
 </h5>
+<div id="outline-text-headline-26" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://feh.finalrewind.org/">feh</a>: An image viewer that also incorporates the option to choose wallpapers.
-</p>
+<p><a href="https://feh.finalrewind.org/">feh</a>: An image viewer that also incorporates the option to choose wallpapers.</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/muennich/sxiv">sxiv</a>: A light and simple image viewer, very similar to feh, although without the option to place wallpapers, but it can reproduce gifs and has a mode &#34;expo&#34; to see all the selected images, it can execute scripts on images and even can be used like selector for scripts.
-</p>
+<p><a href="https://github.com/muennich/sxiv">sxiv</a>: A light and simple image viewer, very similar to feh, although without the option to place wallpapers, but it can reproduce gifs and has a mode &#34;expo&#34; to see all the selected images, it can execute scripts on images and even can be used like selector for scripts.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-5">
 <h5 id="headline-27">
 Document viewer
 </h5>
+<div id="outline-text-headline-27" class="outline-text-5">
 <ul>
 <li>
-<p>
-<a href="https://pwmt.org/projects/zathura/">Zathura</a>: A minimalist file viewer, it has a few settings you can apply to change colors and keyboard shortcuts.
-</p>
+<p><a href="https://pwmt.org/projects/zathura/">Zathura</a>: A minimalist file viewer, it has a few settings you can apply to change colors and keyboard shortcuts.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-28" class="outline-5">
 <h5 id="headline-28">
 Patches I should use
 </h5>
-<p>
-This depends on each person, but I share with you the list of patches that I use.
-</p>
+<div id="outline-text-headline-28" class="outline-text-5">
+<p>This depends on each person, but I share with you the list of patches that I use.</p>
+<div id="outline-container-headline-29" class="outline-6">
 <h6 id="headline-29">
 <strong>Feature related</strong>
 </h6>
-<p>
-Those patches that add new features to DWM, some of them are simple features that are present in other TWMs.
-</p>
+<div id="outline-text-headline-29" class="outline-text-6">
+<p>Those patches that add new features to DWM, some of them are simple features that are present in other TWMs.</p>
 <ul>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/actualfullscreen/dwm-actualfullscreen-20191112-cb3f58a.diff">actualfullscreen:</a> Allows to activate true fullscreen instead of just change to monocle layout and hide the bar.
-</p>
+<p><a href="https://dwm.suckless.org/patches/actualfullscreen/dwm-actualfullscreen-20191112-cb3f58a.diff">actualfullscreen:</a> Allows to activate true fullscreen instead of just change to monocle layout and hide the bar.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/alwayscenter/">alwayscenter</a>: Floating windows are always placed at the center of the screen.
-</p>
+<p><a href="https://dwm.suckless.org/patches/alwayscenter/">alwayscenter</a>: Floating windows are always placed at the center of the screen.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/cyclelayouts/dwm-cyclelayouts-20180524-6.2.diff">cyclelayouts:</a> Go through the layout list with a button combination.
-</p>
+<p><a href="https://dwm.suckless.org/patches/cyclelayouts/dwm-cyclelayouts-20180524-6.2.diff">cyclelayouts:</a> Go through the layout list with a button combination.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/inplacerotate/">inplacerotate</a>: Allows to rotate the windows in the stack without changing master.
-</p>
+<p><a href="https://dwm.suckless.org/patches/inplacerotate/">inplacerotate</a>: Allows to rotate the windows in the stack without changing master.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/movestack/dwm-movestack-6.1.diff">movestack:</a> Allows to move the windows in the stack part, when using the default layout.
-</p>
+<p><a href="https://dwm.suckless.org/patches/movestack/dwm-movestack-6.1.diff">movestack:</a> Allows to move the windows in the stack part, when using the default layout.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/pertag/dwm-pertag-20170513-ceac8c9.diff">pertag:</a> By default, dwm uses the same layout for all tags. With this patch each tag has a different layout (the initial scheme is tile).
-</p>
+<p><a href="https://dwm.suckless.org/patches/pertag/dwm-pertag-20170513-ceac8c9.diff">pertag:</a> By default, dwm uses the same layout for all tags. With this patch each tag has a different layout (the initial scheme is tile).</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/switchcol/">switchcol:</a> It allows to change the focus between master and stack with a single keybinding. Useful with the <em>deck</em> layout.
-</p>
+<p><a href="https://dwm.suckless.org/patches/switchcol/">switchcol:</a> It allows to change the focus between master and stack with a single keybinding. Useful with the <em>deck</em> layout.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/winview/">winview</a>: If you are seeing several tags at once, pressing a keybinding switches to the tag in the focused window.
-</p>
+<p><a href="https://dwm.suckless.org/patches/winview/">winview</a>: If you are seeing several tags at once, pressing a keybinding switches to the tag in the focused window.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-6">
 <h6 id="headline-30">
 <strong>Layouts</strong>
 </h6>
-<p>
-New layout I&#39;ve added to DWM.
-</p>
+<div id="outline-text-headline-30" class="outline-text-6">
+<p>New layout I&#39;ve added to DWM.</p>
 <ul>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/centeredmaster/">centeredmaster:</a> The <em>master</em> window is placed in the center while the others appear in a grid around it.
-</p>
+<p><a href="https://dwm.suckless.org/patches/centeredmaster/">centeredmaster:</a> The <em>master</em> window is placed in the center while the others appear in a grid around it.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/deck/">deck:</a>  The <em>stack</em> part only shows one window at a time. If used with <em>inplacerotate</em> it is possible to change the window in <em>stack</em> without moving <em>master</em>.
-</p>
+<p><a href="https://dwm.suckless.org/patches/deck/">deck:</a>  The <em>stack</em> part only shows one window at a time. If used with <em>inplacerotate</em> it is possible to change the window in <em>stack</em> without moving <em>master</em>.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/fibonacci/dwm-fibonacci-5.8.2.diff">fibonacci:</a> Two new layouts: spiral y dwindle (à la bspwm).
-</p>
+<p><a href="https://dwm.suckless.org/patches/fibonacci/dwm-fibonacci-5.8.2.diff">fibonacci:</a> Two new layouts: spiral y dwindle (à la bspwm).</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/gridmode/dwm-gridmode-20170909-ceac8c9.diff">gridmode:</a> Grid layout.
-</p>
+<p><a href="https://dwm.suckless.org/patches/gridmode/dwm-gridmode-20170909-ceac8c9.diff">gridmode:</a> Grid layout.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/rmaster/dwm-rmaster-6.1.diff">rmaster:</a> Allows to reverse the order of the tile scheme: master on the left and stack on the right.
-</p>
+<p><a href="https://dwm.suckless.org/patches/rmaster/dwm-rmaster-6.1.diff">rmaster:</a> Allows to reverse the order of the tile scheme: master on the left and stack on the right.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-31" class="outline-6">
 <h6 id="headline-31">
 <strong>Aesthetic related</strong>
 </h6>
-<p>
-Patches that only serve to improve the aesthetic aspect of the WM and contribute little or nothing to the functional aspect.
-</p>
+<div id="outline-text-headline-31" class="outline-text-6">
+<p>Patches that only serve to improve the aesthetic aspect of the WM and contribute little or nothing to the functional aspect.</p>
 <ul>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/alttagsdecoration/">alttagsdecoration</a>: Allows you to declare different icons for each tag when they are busy.
-</p>
+<p><a href="https://dwm.suckless.org/patches/alttagsdecoration/">alttagsdecoration</a>: Allows you to declare different icons for each tag when they are busy.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/barpadding/">barpadding:</a> Add vertical andhorizontal padding to the bar from the screen.  
-</p>
+<p><a href="https://dwm.suckless.org/patches/barpadding/">barpadding:</a> Add vertical andhorizontal padding to the bar from the screen.  </p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/colorbar/">colorbar</a>: Add new color schemes for each section of the panel.
-</p>
+<p><a href="https://dwm.suckless.org/patches/colorbar/">colorbar</a>: Add new color schemes for each section of the panel.</p>
 </li>
 <li>
-<p>
-<a href="https://github.com/ashish-yadav11/dwmblocks">dwmblocks</a>: Add support for colored text and click on the dwmblocks modules.
-</p>
+<p><a href="https://github.com/ashish-yadav11/dwmblocks">dwmblocks</a>: Add support for colored text and click on the dwmblocks modules.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff">fixborders</a>: Fix the transparent borders when using compton/picom.
-</p>
+<p><a href="https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff">fixborders</a>: Fix the transparent borders when using compton/picom.</p>
 </li>
 <li>
-<p>
-<a href="https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-6.2.diff">uselessgap:</a> Add useless gaps between windows. Although it is not the only patch, it is the easiest to apply.
-</p>
+<p><a href="https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-6.2.diff">uselessgap:</a> Add useless gaps between windows. Although it is not the only patch, it is the easiest to apply.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-32" class="outline-3">
 <h3 id="headline-32">
 A first approach: the flexipatch project
 </h3>
+<div id="outline-text-headline-32" class="outline-text-3">
 <p>
-The project <a href="https://github.com/bakkeby/dwm-flexipatch">flexipatch</a> is a highly modified version of dwm that incorporates a new file called <code>patches.h</code>. This file acts as a switch to activate or deactivate patches.It is a simple way to test the options that the dwm community has created, although it is not very advisable for daily use, as customization is discouraged.  If you want to test the possibilities of dwm without getting into the problem of patching, or you want to be sure what a certain patch does before installing it, I recommend you to try this project.
-</p>
+The project <a href="https://github.com/bakkeby/dwm-flexipatch">flexipatch</a> is a highly modified version of dwm that incorporates a new file called <code>patches.h</code>. This file acts as a switch to activate or deactivate patches.It is a simple way to test the options that the dwm community has created, although it is not very advisable for daily use, as customization is discouraged.  If you want to test the possibilities of dwm without getting into the problem of patching, or you want to be sure what a certain patch does before installing it, I recommend you to try this project.</p>
+</div>
+</div>
 
 		</div>
 

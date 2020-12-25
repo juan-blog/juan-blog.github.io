@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://juan-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Porqué cambié a GNOME y en qué rayos estaba pensando</title>
       <link>https://juan-blog.github.io/posts/gnome3/</link>
@@ -36,7 +32,8 @@
       <pubDate>Sun, 28 Jun 2020 22:15:31 -0600</pubDate>
       
       <guid>https://juan-blog.github.io/posts/bujo/</guid>
-      <description>Desde hace mucho tiempo he intentado utilizar aplicaciones para hacer notas, listas de tareas, calendarios y demás sistemas de &amp;#34;productividad&amp;#34;. Sin embargo, siempre me he topado con el mismo problema: al cabo de un par de días o semanas dejo de utilizarlo.  Hace cerca de dos años descubrí el método GTD de productividad. Parecía que acababa de encontrar el santo grial y que estaba frente a la solución definitiva para mi deseo de introducir alguna metodología de productividad a mi vida.</description>
+      <description>Desde hace mucho tiempo he intentado utilizar aplicaciones para hacer notas, listas de tareas, calendarios y demás sistemas de &amp;#34;productividad&amp;#34;. Sin embargo, siempre me he topado con el mismo problema: al cabo de un par de días o semanas dejo de utilizarlo.
+ Hace cerca de dos años descubrí el método GTD de productividad. Parecía que acababa de encontrar el santo grial y que estaba frente a la solución definitiva para mi deseo de introducir alguna metodología de productividad a mi vida.</description>
     </item>
     
     <item>

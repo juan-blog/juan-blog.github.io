@@ -63,211 +63,229 @@
 		<div class="markdown">
 			
 <p>
-A little over a week ago I made a radical decision: I downloaded the newest version of Fedora 32 and installed it on my system. I left behind the <em>suckless</em> universe of dwm, the minimalism of Arch Linux, and the <em>workflow</em> based on terminal applications and automatic window layout to make way for a totally different system, <em>bloated</em>, and with a totally different <em>workflow</em>. What the hell was going through my head when I did that? Well, I have a reason. I think.
-</p>
+A little over a week ago I made a radical decision: I downloaded the newest version of Fedora 32 and installed it on my system. I left behind the <em>suckless</em> universe of dwm, the minimalism of Arch Linux, and the <em>workflow</em> based on terminal applications and automatic window layout to make way for a totally different system, <em>bloated</em>, and with a totally different <em>workflow</em>. What the hell was going through my head when I did that? Well, I have a reason. I think.</p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 The rationale
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
 <p>
-I have noticed for some time that my Thinkpad T430 was overheating in certain situations. For example, a Zoom conference, exploring Google Earth, or certain games like <em>Doki Doki Literature Club</em> or <em>CS:GO</em> made the temperature rise to over 85°C and sometimes over 90° and even shut down due to the heat. In &#34;normal&#34; situations it was kept at a healthy 60°C approximately (the room temperature reaches 40°C so it&#39;s not too bad) but it only demanded a little bit, even Firefox+Spotify made the temperature rise above 70°C.
-</p>
+I have noticed for some time that my Thinkpad T430 was overheating in certain situations. For example, a Zoom conference, exploring Google Earth, or certain games like <em>Doki Doki Literature Club</em> or <em>CS:GO</em> made the temperature rise to over 85°C and sometimes over 90° and even shut down due to the heat. In &#34;normal&#34; situations it was kept at a healthy 60°C approximately (the room temperature reaches 40°C so it&#39;s not too bad) but it only demanded a little bit, even Firefox+Spotify made the temperature rise above 70°C.</p>
 <p>
-The obvious solution seemed to be to change the thermal paste and give it a clean-up, but after that the temperature situation continued. The problem is apparently one of software. And yes, most likely I caused it by editing some file related to CPU or battery use, but identifying whether that was the case or not was a daunting task that seemed easier just to try another distro.
-</p>
+The obvious solution seemed to be to change the thermal paste and give it a clean-up, but after that the temperature situation continued. The problem is apparently one of software. And yes, most likely I caused it by editing some file related to CPU or battery use, but identifying whether that was the case or not was a daunting task that seemed easier just to try another distro.</p>
+<div id="outline-container-headline-2" class="outline-4">
 <h4 id="headline-2">
 Ok, but why that combination?
 </h4>
+<div id="outline-text-headline-2" class="outline-text-4">
 <p>
-My brother happily uses GNOME 3 in Ubuntu 20.04 and it attracted me a little bit. I had never used GNOME before, I was taking it out because it is &#34;unusable, bloated and bad&#34;. However, curiosity got the better of me, and experiencing a complete Desktop Environment after almost two years using only <em>Tiling Window Managers</em> attracted me quite a bit.
-</p>
+My brother happily uses GNOME 3 in Ubuntu 20.04 and it attracted me a little bit. I had never used GNOME before, I was taking it out because it is &#34;unusable, bloated and bad&#34;. However, curiosity got the better of me, and experiencing a complete Desktop Environment after almost two years using only <em>Tiling Window Managers</em> attracted me quite a bit.</p>
 <p>
-I chose Fedora because I don&#39;t want to use Ubuntu and because I had never used Fedora seriously before. It would be a totally new and different experience. And if I must be totally honest, the temperature thing was, in part, a pretext to live it.
-</p>
+I chose Fedora because I don&#39;t want to use Ubuntu and because I had never used Fedora seriously before. It would be a totally new and different experience. And if I must be totally honest, the temperature thing was, in part, a pretext to live it.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 The life in Fedora
 </h2>
+<div id="outline-text-headline-3" class="outline-text-2">
 <p>
-Before talking about GNOME I want to dedicate a few paragraphs to Fedora. My only approach to Fedora was a few years ago, I installed it with Plasma but destroyed the system with the Global Menu and from there it got stuck every time I logged in. It was about 30 nice minutes. I also tried its flavor <a href="https://spins.fedoraproject.org/en/soas/">Sugar on a stick</a> but I don&#39;t think it really counts. 
-</p>
+Before talking about GNOME I want to dedicate a few paragraphs to Fedora. My only approach to Fedora was a few years ago, I installed it with Plasma but destroyed the system with the Global Menu and from there it got stuck every time I logged in. It was about 30 nice minutes. I also tried its flavor <a href="https://spins.fedoraproject.org/en/soas/">Sugar on a stick</a> but I don&#39;t think it really counts. </p>
 <p>
-So far I am happy with Fedora. Some time ago I understood that GNU/Linux distros are almost all the same, the only difference being the pre-installed software, the package manager and certain configurations. Fedora is no exception. Except for the fact that it uses <code>dnf</code> as package manager and the software selection, there are no major differences from other distros. However, I do have some points to make, some positive, some negative, about the Red Hat Community Distro.
-</p>
+So far I am happy with Fedora. Some time ago I understood that GNU/Linux distros are almost all the same, the only difference being the pre-installed software, the package manager and certain configurations. Fedora is no exception. Except for the fact that it uses <code>dnf</code> as package manager and the software selection, there are no major differences from other distros. However, I do have some points to make, some positive, some negative, about the Red Hat Community Distro.</p>
+<div id="outline-container-headline-4" class="outline-4">
 <h4 id="headline-4">
 What I liked the most 
 </h4>
+<div id="outline-text-headline-4" class="outline-text-4">
 <ul>
 <li>
-<p>
-The Anaconda installer: Super simple, it&#39;s composed of only 4 steps, and if you leave the automatic configuration (very successful, I only had to change my zone and partitions) it becomes one step. I had a complete system installed and ready to use in less than 20 minutes, compared to the 50 or more minutes it takes to install the Arch base.
-</p>
+<p>The Anaconda installer: Super simple, it&#39;s composed of only 4 steps, and if you leave the automatic configuration (very successful, I only had to change my zone and partitions) it becomes one step. I had a complete system installed and ready to use in less than 20 minutes, compared to the 50 or more minutes it takes to install the Arch base.</p>
 </li>
 <li>
-<p>
-GNOME integration: Fedora does not incorporate any proprietary applications such as YaST, <code>manjaro-settings</code>, <code>gdebi</code> or anything similar. GNOME handles everything, and the system feels quite integrated. There is nothing, by default, that goes outside the GNOME lines or feels independent of the Desktop Environment.
-</p>
+<p>GNOME integration: Fedora does not incorporate any proprietary applications such as YaST, <code>manjaro-settings</code>, <code>gdebi</code> or anything similar. GNOME handles everything, and the system feels quite integrated. There is nothing, by default, that goes outside the GNOME lines or feels independent of the Desktop Environment.</p>
 </li>
 <li>
-<p>
-The software selection: Quite minimalist in this respect, as it only includes a few GNOME programs, Firefox and Libre Office. What you need to start using the system and nothing else.
-</p>
+<p>The software selection: Quite minimalist in this respect, as it only includes a few GNOME programs, Firefox and Libre Office. What you need to start using the system and nothing else.</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
 What I don&#39;t like so much
 </h4>
+<div id="outline-text-headline-5" class="outline-text-4">
 <ul>
 <li>
-<p>
-DNF: Fedora&#39;s package manager is called <code>dnf</code> and is SLOW. Not only because it is written in python, but the downloads are extremely slow by default, I am talking about 20 kB/s on average. I had to modify some things in the configuration so that the downloads were at an acceptable speed.
-</p>
+<p>DNF: Fedora&#39;s package manager is called <code>dnf</code> and is SLOW. Not only because it is written in python, but the downloads are extremely slow by default, I am talking about 20 kB/s on average. I had to modify some things in the configuration so that the downloads were at an acceptable speed.</p>
 </li>
 <li>
-<p>
-No multimedia codecs: I didn&#39;t think that in the middle of 2020 there would be a distribution that didn&#39;t come with the multimedia codecs pre-installed. It&#39;s not difficult or anything to add them, but you remember them the moment you need to play an <em>mp3</em> and you can&#39;t.
-</p>
+<p>No multimedia codecs: I didn&#39;t think that in the middle of 2020 there would be a distribution that didn&#39;t come with the multimedia codecs pre-installed. It&#39;s not difficult or anything to add them, but you remember them the moment you need to play an <em>mp3</em> and you can&#39;t.</p>
 <ul>
 <li>
-<p>
-Go now with GNOME
-</p>
+<p>Go now with GNOME</p>
 </li>
 </ul>
 </li>
 </ul>
+<p>GNOME, ahh. Before installing it, I was aware of the <em>workflow</em> involved, no panel, minimal customization and the hatred of several of the celebrities in the Linux world. But when I started to use it I didn&#39;t find any difficulty and I started to enjoy some of its features. It&#39;s true that it doesn&#39;t have the overwhelming configuration and customization of Plasma, and the way to use it is radically different from what I&#39;ve been doing for a long time, but it doesn&#39;t involve reinventing the wheel either.</p>
 <p>
-GNOME, ahh. Before installing it, I was aware of the <em>workflow</em> involved, no panel, minimal customization and the hatred of several of the celebrities in the Linux world. But when I started to use it I didn&#39;t find any difficulty and I started to enjoy some of its features. It&#39;s true that it doesn&#39;t have the overwhelming configuration and customization of Plasma, and the way to use it is radically different from what I&#39;ve been doing for a long time, but it doesn&#39;t involve reinventing the wheel either.
-</p>
+His file manager, Nautilus, I find it well, somewhat limited in certain aspects, but it does its job. The huge title bars do not displease me at all because they have buttons inside making them even useful and not just decorations. Finally, I like the <em>overview</em>, and I even find it practical.</p>
 <p>
-His file manager, Nautilus, I find it well, somewhat limited in certain aspects, but it does its job. The huge title bars do not displease me at all because they have buttons inside making them even useful and not just decorations. Finally, I like the <em>overview</em>, and I even find it practical.
-</p>
+Of course I started to miss some things after a few minutes of using it. First, the support for <em>tiling</em>, and I&#39;m afraid to say that I didn&#39;t find any extension or alternative that would satisfy me, besides manually placing windows on the edges. Second, some keyboard shortcuts I don&#39;t like, and here I found one of my first issues with GNOME: when they talk about little customization it&#39;s serious, it&#39;s very little, not being able to change some keyboard shortcuts bothered me at first. Eventually I changed them along with other things with <code>dconf</code>, but why are they not in sight? </p>
 <p>
-Of course I started to miss some things after a few minutes of using it. First, the support for <em>tiling</em>, and I&#39;m afraid to say that I didn&#39;t find any extension or alternative that would satisfy me, besides manually placing windows on the edges. Second, some keyboard shortcuts I don&#39;t like, and here I found one of my first issues with GNOME: when they talk about little customization it&#39;s serious, it&#39;s very little, not being able to change some keyboard shortcuts bothered me at first. Eventually I changed them along with other things with <code>dconf</code>, but why are they not in sight? 
-</p>
+I quickly found <a href="https://extensions.gnome.org/#">GNOME extensions</a>, <code>gnome-tweaks</code> and <a href="https://www.gnome-look.org/browse/cat/">Gnome-look</a> and started making the desktop mine… as much as possible. I downloaded themes, edited some others, installed extensions of all kinds and established an environment where, right now, I feel more or less comfortable.</p>
 <p>
-I quickly found <a href="https://extensions.gnome.org/#">GNOME extensions</a>, <code>gnome-tweaks</code> and <a href="https://www.gnome-look.org/browse/cat/">Gnome-look</a> and started making the desktop mine… as much as possible. I downloaded themes, edited some others, installed extensions of all kinds and established an environment where, right now, I feel more or less comfortable.
-</p>
+<img src="gnome.png" alt="gnome.png" title="gnome.png" /></p>
 <p>
-<img src="gnome.png" alt="gnome.png" title="gnome.png" />
-</p>
-<p>
-I must emphasize the advantage and how pleasant it is to work in a complete, integrated and modern desktop environment, instead of the modular <em>Window Managers</em>, composed of separate pieces. In GNOME (and in Plasma, and in XFCE, and in other Desktop Environments) it feels like each program is part of a whole and communicate with each other. Most of the applications work correctly, they are shown as they were meant to be shown, and all their features work correctly. This feeling of integration cannot always be given by a <em>Window Manager</em>.
-</p>
+I must emphasize the advantage and how pleasant it is to work in a complete, integrated and modern desktop environment, instead of the modular <em>Window Managers</em>, composed of separate pieces. In GNOME (and in Plasma, and in XFCE, and in other Desktop Environments) it feels like each program is part of a whole and communicate with each other. Most of the applications work correctly, they are shown as they were meant to be shown, and all their features work correctly. This feeling of integration cannot always be given by a <em>Window Manager</em>.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
 <h4 id="headline-6">
 The good thing about GNOME
 </h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<div id="outline-container-headline-7" class="outline-5">
 <h5 id="headline-7">
 The overall experience
 </h5>
-<p>
-I came across a good, fluid experience, which eventually ended up pleasing me. I haven&#39;t noticed any major problems such as random crashing or serious system failures.
-</p>
+<div id="outline-text-headline-7" class="outline-text-5">
+<p>I came across a good, fluid experience, which eventually ended up pleasing me. I haven&#39;t noticed any major problems such as random crashing or serious system failures.</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-5">
 <h5 id="headline-8">
 System Integration 
 </h5>
-<p>
-I have already mentioned it, but it is very nice to use such an integrated system. For example, I can access my smartphone information in the panel, receive notifications without problems, I can see them in the notification center, and I can browse my smartphone from Nautilus as if it were a USB flash drive. In dwm, to achieve something similar, it would take several scripts and the experience would be far from the same.
-</p>
+<div id="outline-text-headline-8" class="outline-text-5">
+<p>I have already mentioned it, but it is very nice to use such an integrated system. For example, I can access my smartphone information in the panel, receive notifications without problems, I can see them in the notification center, and I can browse my smartphone from Nautilus as if it were a USB flash drive. In dwm, to achieve something similar, it would take several scripts and the experience would be far from the same.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
 <h4 id="headline-9">
 The bad thing about GNOME
 </h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<div id="outline-container-headline-10" class="outline-5">
 <h5 id="headline-10">
 Too complex 
 </h5>
-<p>
-An API that communicates through a Framework, which writes &#34; registers&#34; in the system, using complicated paths like <code>/org/gnome/mutter/keybindings/</code> to finally change a keyboard shortcut. Is it necessary so much complication? Isn&#39;t it better a simple and easy configuration file in <code>$XDG_CONFIG</code> or some other place? It turns out that GNOME is configurable and has many options to move around, but hidden behind the maze that is <code>gsettings</code> and <code>dconf</code>.
-</p>
+<div id="outline-text-headline-10" class="outline-text-5">
+<p>An API that communicates through a Framework, which writes &#34; registers&#34; in the system, using complicated paths like <code>/org/gnome/mutter/keybindings/</code> to finally change a keyboard shortcut. Is it necessary so much complication? Isn&#39;t it better a simple and easy configuration file in <code>$XDG_CONFIG</code> or some other place? It turns out that GNOME is configurable and has many options to move around, but hidden behind the maze that is <code>gsettings</code> and <code>dconf</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-5">
 <h5 id="headline-11">
 The philosophy of (some) GNOME developers and users of &#34;you don&#39;t know what&#39;s best for you, so use the system as it comes pre-installed and don&#39;t change anything&#34;.  
 </h5>
+<div id="outline-text-headline-11" class="outline-text-5">
+<p>I have read many comments on why use the system as it comes by default to understand why GNOME 3 is the way it is and why the whole <em>workflow</em> makes sense. I&#39;ve read other comments about how the default options are perfect and why you shouldn&#39;t modify them to suit your taste. I&#39;ve even seen similar comments from extension developers who refuse to add features or modify functions, even though they are in high demand, because the &#34;user experience&#34; would be affected; or in other words, because they believe that the user shouldn&#39;t adapt the system to their taste, but use it to the taste of another. </p>
 <p>
-I have read many comments on why use the system as it comes by default to understand why GNOME 3 is the way it is and why the whole <em>workflow</em> makes sense. I&#39;ve read other comments about how the default options are perfect and why you shouldn&#39;t modify them to suit your taste. I&#39;ve even seen similar comments from extension developers who refuse to add features or modify functions, even though they are in high demand, because the &#34;user experience&#34; would be affected; or in other words, because they believe that the user shouldn&#39;t adapt the system to their taste, but use it to the taste of another. 
-</p>
-<p>
-I agree that giving the user total configuration freedom can end up in a complicated program that is impossible to maintain, or in a miserable experience by getting lost among a thousand trivial options. But to assume that a certain function is the best and to deliberately deny the opportunity to change it because the developer has already chosen the best for you is not the right approach to software design. But watch out, this is my opinion, and it&#39;s probably wrong.
-</p>
+I agree that giving the user total configuration freedom can end up in a complicated program that is impossible to maintain, or in a miserable experience by getting lost among a thousand trivial options. But to assume that a certain function is the best and to deliberately deny the opportunity to change it because the developer has already chosen the best for you is not the right approach to software design. But watch out, this is my opinion, and it&#39;s probably wrong.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-2">
 <h2 id="headline-12">
 And what they say about the environment, how true is it?      
 </h2>
+<div id="outline-text-headline-12" class="outline-text-2">
 <p>
-A lot is said about GNOME, that it&#39;s slow, heavy, unusable, with a silly metaphor, and that it should disappear. I&#39;m going to take 5 of the points I see most on the Internet as criticism of GNOME and share my experience so far.
-</p>
+A lot is said about GNOME, that it&#39;s slow, heavy, unusable, with a silly metaphor, and that it should disappear. I&#39;m going to take 5 of the points I see most on the Internet as criticism of GNOME and share my experience so far.</p>
+<div id="outline-container-headline-13" class="outline-3">
 <h3 id="headline-13">
 1. It consumes too many resources
 </h3>
+<div id="outline-text-headline-13" class="outline-text-3">
 <p>
-Compared to the 200 MB that dwm consumes, then yes, GNOME is a monster that takes almost 700 MB of RAM at startup. But here a detail enters: dwm was not executed alone, it had to execute a group of programs like panel, notification server, compositor and other daemons, so the RAM was about 500 MB at boot, there is not so much difference anymore. 
-</p>
+Compared to the 200 MB that dwm consumes, then yes, GNOME is a monster that takes almost 700 MB of RAM at startup. But here a detail enters: dwm was not executed alone, it had to execute a group of programs like panel, notification server, compositor and other daemons, so the RAM was about 500 MB at boot, there is not so much difference anymore. </p>
 <p>
-Although it is not only the boot, after a few minutes the RAM usage, when idle, is set around 1.3 GB. Unacceptable! they will say, but with my 8 GB of RAM it does not affect me much. With dwm, when working normally the RAM usage was kept around 2.5 GB, while with GNOME it is kept around 3 GB. I have not seen it go up to more than this until now while in a couple of occasions (during Zoom conferences) I did notice that with dwm the RAM was going to more than 6 GB.
-</p>
+Although it is not only the boot, after a few minutes the RAM usage, when idle, is set around 1.3 GB. Unacceptable! they will say, but with my 8 GB of RAM it does not affect me much. With dwm, when working normally the RAM usage was kept around 2.5 GB, while with GNOME it is kept around 3 GB. I have not seen it go up to more than this until now while in a couple of occasions (during Zoom conferences) I did notice that with dwm the RAM was going to more than 6 GB.</p>
 <p>
-Even if it would consume more RAM (and it does), I don&#39;t worry too much since I have enough resources for it. It&#39;s funny to see how people with 64 GB of RAM and 16-core CPU complain about resource consumption. But if I had, say, 4 GB of RAM, I wouldn&#39;t use GNOME at all.
-</p>
+Even if it would consume more RAM (and it does), I don&#39;t worry too much since I have enough resources for it. It&#39;s funny to see how people with 64 GB of RAM and 16-core CPU complain about resource consumption. But if I had, say, 4 GB of RAM, I wouldn&#39;t use GNOME at all.</p>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
 <h3 id="headline-14">
 2. Their desktop metaphor is unusable. 
 </h3>
+<div id="outline-text-headline-14" class="outline-text-3">
 <p>
-To be honest, I left the traditional desktop metaphor behind long ago with <em>window managers</em>. Desktop icons no longer interest me, and not having a taskbar or dock doesn&#39;t affect me, as I got used to looking for programs by typing their name or using keyboard shortcuts. What&#39;s more, I already used a top panel that only did the reporting function like the one in GNOME.
-</p>
+To be honest, I left the traditional desktop metaphor behind long ago with <em>window managers</em>. Desktop icons no longer interest me, and not having a taskbar or dock doesn&#39;t affect me, as I got used to looking for programs by typing their name or using keyboard shortcuts. What&#39;s more, I already used a top panel that only did the reporting function like the one in GNOME.</p>
 <p>
-I find the novelty in the Activities button and the <em>overview</em>, which I found quite nice. The active corner is even comfortable for me, although I don&#39;t use the mouse much. I like the full screen menu and I used to use something similar with <code>rofi</code>. 
-</p>
+I find the novelty in the Activities button and the <em>overview</em>, which I found quite nice. The active corner is even comfortable for me, although I don&#39;t use the mouse much. I like the full screen menu and I used to use something similar with <code>rofi</code>. </p>
 <p>
-While changing the metaphor doesn&#39;t affect me as it seems to with other users, the floating window system of a <em>stacking window manager</em> does. Used to automatic tiling, it&#39;s rare not to have my windows set up automatically. 
-</p>
+While changing the metaphor doesn&#39;t affect me as it seems to with other users, the floating window system of a <em>stacking window manager</em> does. Used to automatic tiling, it&#39;s rare not to have my windows set up automatically. </p>
 <p>
-However, some time ago I started noticing the limitations of the <em>tiling</em> model. Actually, it is usable with a maximum of 3 windows per virtual desktop, more become too small to say that they are actually usable, and if what I want is to have them stacked on the right side waiting to be called to action on the left side, then I have the largest dock with minimized applications in history. Another limitation is in those windows that I don&#39;t want to see, like the music player. I am forced to send them to a distant empty desktop so I can&#39;t see them, a clumsy adaptation of minimizing windows.
-</p>
+However, some time ago I started noticing the limitations of the <em>tiling</em> model. Actually, it is usable with a maximum of 3 windows per virtual desktop, more become too small to say that they are actually usable, and if what I want is to have them stacked on the right side waiting to be called to action on the left side, then I have the largest dock with minimized applications in history. Another limitation is in those windows that I don&#39;t want to see, like the music player. I am forced to send them to a distant empty desktop so I can&#39;t see them, a clumsy adaptation of minimizing windows.</p>
 <p>
-So, although I miss the <em>master and stack</em> I start to see and appreciate the floating windows, although I need to set keyboard shortcuts to accommodate them with the keyboard.
-</p>
+So, although I miss the <em>master and stack</em> I start to see and appreciate the floating windows, although I need to set keyboard shortcuts to accommodate them with the keyboard.</p>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-3">
 <h3 id="headline-15">
 3. GNOME is not customizable
 </h3>
+<div id="outline-text-headline-15" class="outline-text-3">
 <p>
-This is partly true and partly a nuisance. By default, you can only modify a few keyboard shortcuts, the wallpaper and little else. But using <code>gnome-tweaks</code> takes customization to a somewhat more acceptable level, allowing you to change icons, themes, and other settings that I still don&#39;t understand why GNOME doesn&#39;t incorporate them. The developers argue that it would make it more complicated to maintain the system, but I don&#39;t see how displaying the battery percentage would make it more complex than it already is.
-</p>
+This is partly true and partly a nuisance. By default, you can only modify a few keyboard shortcuts, the wallpaper and little else. But using <code>gnome-tweaks</code> takes customization to a somewhat more acceptable level, allowing you to change icons, themes, and other settings that I still don&#39;t understand why GNOME doesn&#39;t incorporate them. The developers argue that it would make it more complicated to maintain the system, but I don&#39;t see how displaying the battery percentage would make it more complex than it already is.</p>
 <p>
-A wide variety of configurations are also opened through <code>gsettings</code> and its <code>dconf</code> graphical interface, and again I wonder why several of these configurations, some of them basic, are not exposed to the user or are so hidden.
-</p>
+A wide variety of configurations are also opened through <code>gsettings</code> and its <code>dconf</code> graphical interface, and again I wonder why several of these configurations, some of them basic, are not exposed to the user or are so hidden.</p>
 <p>
-Despite all the inconveniences, the available customization (with <code>gnome-tweaks</code> and <code>dconf</code>) is not so bad. Yes, it doesn&#39;t have the incredibly huge Plasma 5 configuration center or its amazing extensions, but that&#39;s a good thing. I like that if I want to modify something (if it can be modified) it is clear and easy to find, and it is not hidden behind several menus and confusingly named tabs. On more than one occasion I have come across Plasma looking to change something to discover that it was in a category that has nothing to do with it. In GNOME that doesn&#39;t happen… because maybe you can&#39;t change it. As for the extensions, although they are limited in scope, they are more useful, they seek to solve specific problems rather than being &#34; cool &#34; and that&#39;s good, it makes your system more focused on productivity.
-</p>
+Despite all the inconveniences, the available customization (with <code>gnome-tweaks</code> and <code>dconf</code>) is not so bad. Yes, it doesn&#39;t have the incredibly huge Plasma 5 configuration center or its amazing extensions, but that&#39;s a good thing. I like that if I want to modify something (if it can be modified) it is clear and easy to find, and it is not hidden behind several menus and confusingly named tabs. On more than one occasion I have come across Plasma looking to change something to discover that it was in a category that has nothing to do with it. In GNOME that doesn&#39;t happen… because maybe you can&#39;t change it. As for the extensions, although they are limited in scope, they are more useful, they seek to solve specific problems rather than being &#34; cool &#34; and that&#39;s good, it makes your system more focused on productivity.</p>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-3">
 <h3 id="headline-16">
 4. GNOME is slow and the animations are stuck
 </h3>
+<div id="outline-text-headline-16" class="outline-text-3">
 <p>
-This is a statement, I think, born from the first versions of GNOME 3 where, I understand, it was slow, with stuck animations and impossible to work with. 
-</p>
+This is a statement, I think, born from the first versions of GNOME 3 where, I understand, it was slow, with stuck animations and impossible to work with. </p>
 <p>
-In my current use, the environment goes like silk, and I have some humble specifications. Although with certain themes (Layan theme, for example) if I suffered some frame drops, with the Flat Remix theme I haven&#39;t had any problem. The environment goes fluid, very fast, with almost all its animations working perfectly. So, either I have very good luck, or GNOME is neither slow nor stuck as its detractors insist on saying. 
-</p>
+In my current use, the environment goes like silk, and I have some humble specifications. Although with certain themes (Layan theme, for example) if I suffered some frame drops, with the Flat Remix theme I haven&#39;t had any problem. The environment goes fluid, very fast, with almost all its animations working perfectly. So, either I have very good luck, or GNOME is neither slow nor stuck as its detractors insist on saying. </p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-3">
 <h3 id="headline-17">
 5. The window decorations are huge. Oh, and Adwaita
 </h3>
+<div id="outline-text-headline-17" class="outline-text-3">
 <p>
-As for its aesthetic aspect, GNOME is criticized for having HUGE window decorations. And it&#39;s true, they are giants. But they do have a function, and no, it&#39;s not to be usable on tablets; they allow buttons to be placed inside them. Instead of being just bars with the window title and close/minimize/maximize buttons, they include application-specific buttons, drop-down menus, switches, etc. so I don&#39;t see them as a waste of space but as a reimplementation that adds utility.
-</p>
+As for its aesthetic aspect, GNOME is criticized for having HUGE window decorations. And it&#39;s true, they are giants. But they do have a function, and no, it&#39;s not to be usable on tablets; they allow buttons to be placed inside them. Instead of being just bars with the window title and close/minimize/maximize buttons, they include application-specific buttons, drop-down menus, switches, etc. so I don&#39;t see them as a waste of space but as a reimplementation that adds utility.</p>
 <p>
-As for the default theme, Adwaita, I don&#39;t like it at all. I must say that it used to be ugly, huge, and remained for many years with an old-fashioned style, keeping icons and buttons with realistic textures in the era of flat design. But today Adwaita is not so bad, looking at it with good eyes it can even be beautiful, although its main objective is to be accessible. Their icons also received a redesign bringing them closer to a much more modern look. Still, it&#39;s not my favorite.
-</p>
+As for the default theme, Adwaita, I don&#39;t like it at all. I must say that it used to be ugly, huge, and remained for many years with an old-fashioned style, keeping icons and buttons with realistic textures in the era of flat design. But today Adwaita is not so bad, looking at it with good eyes it can even be beautiful, although its main objective is to be accessible. Their icons also received a redesign bringing them closer to a much more modern look. Still, it&#39;s not my favorite.</p>
 <figure>
 <img src="adwaita.png" alt="adwaita.png" title="adwaita.png" /><figcaption>
 By Linux Uprising. <a href="https://www.linuxuprising.com/2019/03/features-and-improvements-in-gnome-332.html">https://www.linuxuprising.com/2019/03/features-and-improvements-in-gnome-332.html</a>
 </figcaption>
 </figure>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-2">
 <h2 id="headline-18">
 Will I come to my senses and get back on track someday?
 </h2>
+<div id="outline-text-headline-18" class="outline-text-2">
 <p>
-For the moment, I doubt it. Although I would like to spend the whole day playing with different environments, window managers and applications, I need to work and have my laptop ready for when I occupy it. I&#39;m already settling into GNOME and Fedora for now and don&#39;t want to face difficulties in my job because I&#39;m playing. Also the overheating problem was solved and the activities that made the CPU boil at almost 90°C now are kept at, maximum, 60°C (except <em>CS:GO</em> that keeps overheating everything, I guess the <em>gaming</em> is not for me).
-</p>
+For the moment, I doubt it. Although I would like to spend the whole day playing with different environments, window managers and applications, I need to work and have my laptop ready for when I occupy it. I&#39;m already settling into GNOME and Fedora for now and don&#39;t want to face difficulties in my job because I&#39;m playing. Also the overheating problem was solved and the activities that made the CPU boil at almost 90°C now are kept at, maximum, 60°C (except <em>CS:GO</em> that keeps overheating everything, I guess the <em>gaming</em> is not for me).</p>
 <p>
-For that reason I doubt that it will change soon of environment or distro, unless another situation of force majeure, as it was the overheating, forces me to make it. If I do, maybe I&#39;ll go back to Arch and, depending on my experience, stay in GNOME or look for other environments like Plasma or Budgie (although the latter bores me, since it is a traditional environment). Recently I got interested in <a href="https://wayfire.org/">Wayfire</a>, a quite promising window composer for Wayland with the only detail of, well, being for Wayland. 
-</p>
+For that reason I doubt that it will change soon of environment or distro, unless another situation of force majeure, as it was the overheating, forces me to make it. If I do, maybe I&#39;ll go back to Arch and, depending on my experience, stay in GNOME or look for other environments like Plasma or Budgie (although the latter bores me, since it is a traditional environment). Recently I got interested in <a href="https://wayfire.org/">Wayfire</a>, a quite promising window composer for Wayland with the only detail of, well, being for Wayland. </p>
 <p>
-Let&#39;s wait to see how my experience with GNOME turns out, which so far is being quite positive, before thinking again about the <em>distro hop</em>.
-</p>
+Let&#39;s wait to see how my experience with GNOME turns out, which so far is being quite positive, before thinking again about the <em>distro hop</em>.</p>
+</div>
+</div>
 
 		</div>
 
