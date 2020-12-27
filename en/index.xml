@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I&#39;ve migrated to Wayland!</title>
+      <link>https://juan-blog.github.io/en/posts/sway/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/en/posts/sway/</guid>
+      <description>After a long time reading about Wayland, how X11 is old and unsafe, how the big DE are adopting it and many other things, I decided to give it a try now that I’m free for the vacations and check out how the world of the future is. TL;DR: the experience is not bad, and in several aspects better than X11, although with its disadvantages that not everyone is willing to accept.</description>
+    </item>
+    
+    <item>
+      <title>How do I organize my weeks (for now)?</title>
+      <link>https://juan-blog.github.io/en/posts/how-organize/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/en/posts/how-organize/</guid>
+      <description>I recently wrote about how I migrated my organizational system to an analog system. I had been using the Bullet Journal for a few months, but I encountered a great difficulty: I was not using it. I never filled it out and two or three weeks went by without even opening it. I abandoned the bujo long ago, gave away the Moleskine I had bought and returned to a digital system, which makes a lot of sense now that I work in the city and through virtual classes via Zoom.</description>
+    </item>
+    
     <item>
       <title>Why I changed to GNOME and what the hell I was thinking</title>
       <link>https://juan-blog.github.io/en/posts/gnome3/</link>

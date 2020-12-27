@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://juan-blog.github.io/en/categories/</loc>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/sway/</loc>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/sway/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/sway/"
+                />
+  </url>
+  
+  <url>
     <loc>https://juan-blog.github.io/en/</loc>
-    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -14,6 +44,56 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://juan-blog.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/categories/linuxswaywayland/</loc>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/categories/linuxswaywayland/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/categories/linuxswaywayland/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/</loc>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/categories/gtdproductivity/</loc>
+    <lastmod>2020-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://juan-blog.github.io/en/posts/how-organize/</loc>
+    <lastmod>2020-12-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://juan-blog.github.io/posts/como-me-organizo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://juan-blog.github.io/en/posts/how-organize/"
                 />
   </url>
   
@@ -29,21 +109,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://juan-blog.github.io/en/tags/linux/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/en/posts/</loc>
-    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/posts/"
                 />
   </url>
   
@@ -183,20 +248,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://juan-blog.github.io/en/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://juan-blog.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://juan-blog.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://juan-blog.github.io/en/categories/"
                 />
   </url>
   

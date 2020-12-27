@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gtd,productivity on Juan Castro</title>
+    <link>https://juan-blog.github.io/en/categories/gtdproductivity/</link>
+    <description>Recent content in gtd,productivity on Juan Castro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>Juan Castro</copyright>
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/en/categories/gtdproductivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How do I organize my weeks (for now)?</title>
+      <link>https://juan-blog.github.io/en/posts/how-organize/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/en/posts/how-organize/</guid>
+      <description>I recently wrote about how I migrated my organizational system to an analog system. I had been using the Bullet Journal for a few months, but I encountered a great difficulty: I was not using it. I never filled it out and two or three weeks went by without even opening it. I abandoned the bujo long ago, gave away the Moleskine I had bought and returned to a digital system, which makes a lot of sense now that I work in the city and through virtual classes via Zoom.</description>
+    </item>
+    
+  </channel>
+</rss>

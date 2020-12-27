@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>Juan Castro</copyright>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://juan-blog.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¡He migrado a Wayland!</title>
+      <link>https://juan-blog.github.io/posts/sway/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/posts/sway/</guid>
+      <description>Después de mucho tiempo leyendo acerca de Wayland, como X11 es antiguo e inseguro, como los grandes DE lo están adoptando y muchas cosas más, he decidido darle una oportunidad ahora que estoy libre por las vacaciones y checar como es el mundo del futuro. TL;DR: la experiencia no es mala, y en varios aspectos mejor a X11, aunque con sus desventajas que no todos están dispuestos a aceptar.
+ ¿Por qué Sway?</description>
+    </item>
+    
+    <item>
+      <title>¿Cómo organizo mis semanas (por ahora)?</title>
+      <link>https://juan-blog.github.io/posts/como-me-organizo/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://juan-blog.github.io/posts/como-me-organizo/</guid>
+      <description>Hace poco escribí acerca de como migré mi sistema de organización a un sistema analógico. Estuve usando el Bullet Journal por unos meses pero me topé con una gran dificultad: no lo usaba. Nunca lo llenaba y pasaban dos o tres semanas sin que lo abriera siquiera. El bujo lo abandoné hace mucho, regalé la Moleskine que había comprado y regresé a un sistema digital, que toma mucho sentido ahora que trabajo en la ciudad y a través de clases virtuales por Zoom.</description>
+    </item>
+    
     <item>
       <title>Porqué cambié a GNOME y en qué rayos estaba pensando</title>
       <link>https://juan-blog.github.io/posts/gnome3/</link>

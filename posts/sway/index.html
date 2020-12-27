@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>¡He migrado a Wayland! - Juan Castro</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="¡He migrado a Wayland!" />
+<meta property="og:description" content="Después de mucho tiempo leyendo acerca de Wayland, como X11 es antiguo e inseguro, como los grandes DE lo están adoptando y muchas cosas más, he decidido darle una oportunidad ahora que estoy libre por las vacaciones y checar como es el mundo del futuro. TL;DR: la experiencia no es mala, y en varios aspectos mejor a X11, aunque con sus desventajas que no todos están dispuestos a aceptar.
+ ¿Por qué Sway?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juan-blog.github.io/posts/sway/" />
+<meta property="article:published_time" content="2020-12-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-24T00:00:00+00:00" /><meta property="og:site_name" content="Juan Castro" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="¡He migrado a Wayland!"/>
+<meta name="twitter:description" content="Después de mucho tiempo leyendo acerca de Wayland, como X11 es antiguo e inseguro, como los grandes DE lo están adoptando y muchas cosas más, he decidido darle una oportunidad ahora que estoy libre por las vacaciones y checar como es el mundo del futuro. TL;DR: la experiencia no es mala, y en varios aspectos mejor a X11, aunque con sus desventajas que no todos están dispuestos a aceptar.
+ ¿Por qué Sway?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://juan-blog.github.io/css/main.css" /><link rel="stylesheet" type="text/css" href="https://juan-blog.github.io/css/dark.css"  />
+
+	
+	<script src="https://juan-blog.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://juan-blog.github.io/">
+	<h1 class="site-title"><a href="https://juan-blog.github.io/">Juan Castro</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/es">Inicio</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Todos los posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">Acerca</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">¡He migrado a Wayland!</h1>
+			<div class="meta">Posted at &mdash; Dec 24, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<div class="paragraph">
+<p>Después de mucho tiempo leyendo acerca de Wayland, como X11 es antiguo e inseguro, como los grandes DE lo están adoptando y muchas cosas más, he decidido darle una oportunidad ahora que estoy libre por las vacaciones y checar como es el mundo del futuro. TL;DR: la experiencia no es mala, y en varios aspectos mejor a X11, aunque con sus desventajas que no todos están dispuestos a aceptar.</p>
+</div>
+<div class="sect1">
+<h2 id="_por_qué_sway">¿Por qué Sway?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Omitiré la parte de explicar que es Wayland y sus ventajas, una rápida búsqueda nos lo explica. Lo que si quiero recuperar aquí es una breve lista de sus diferencias más notorias y que más afectan al usuario final, es decir, yo:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wayland aisla cada ventana, por lo que una aplicación no puede saber que pasa en otra. Esto agrega seguridad, pero puede ser una desventaja, pues muchas aplicaciones como selectores de color, de <em>screencast</em> o de automatización estilo <code>xdotool</code> no funcionan.</p>
+</li>
+<li>
+<p>En Wayland el compositor es a la vez el gestor de ventanas y el servidor. En otras palabras, la relación servidor-cliente de X no existe en Wayland. Esto obliga a que todas las configuraciones de dispositivos de entrada y salida las maneje directamente el compositor. Y a diferencia de X, aquí no hay separación entre gestor y compositor de ventanas, así que adiós <code>picom</code>, y en general, a mucha de la modularidad.</p>
+</li>
+<li>
+<p>Wayland tiene muchos protocolos. GNOME usa el suyo propio, KDE usa otro, y muchos compositores minimalistas usan otro llamado <code>wlroots</code>. Como consecuencia, algunas aplicaciones no funcionan en todos los entornos.</p>
+</li>
+<li>
+<p>Las aplicaciones nativas de X no funcionan en Wayland, al menos no todas y no de la forma esperada, lo que implica conseguir un nuevo set de herramientas.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ahora sí, ¿por qué sway? A diferencia de X11, donde hay una gran cantidad de Gestores de Ventanas, en Wayland hay pocos compositores, y muchos de los que hay están o abandonados o muy verdes. Claro que estoy al tanto de <a href="https://github.com/WayfireWM/wayfire">WayFire</a> y de <a href="https://github.com/ifreund/river">River</a>, pero Sway es de los proyectos más completos y con mayor cantidad de usuarios, además que gran parte del desarrollo independiente en Wayland va enfocado a Sway, por lo que si quiero tener el mejor soporte disponible hasta ahorita sin usan GNOME de nuevo, Sway es la opción.</p>
+</div>
+<div class="paragraph">
+<p>Sway es un compositor que funciona practicamente igual a i3wm…​ ¡más desventajas!, pues prefiero el tiling automático de dwm al manual de i3, pero es algo que, más adelante comentaré, estoy sobrellevando.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_la_vida_en_wayland">La vida en Wayland</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A decir verdad y con un uso &#34;normal&#34;, la diferencia es mínima, imperceptible la mayor parte del tiempo. La mayoría de las aplicaciones funcionan bien, como si nada, incluso aquellas que no son nativas y funcionan mediante una capa de emulación llamada <code>Xwayland</code>. Los mayores obstáculos hasta ahora han sido encontrar reemplazos a las aplicaciones que usaba, y el mismo sway.</p>
+</div>
+<div class="paragraph">
+<p>Como dije al inicio, no estoy muy acostumbrado al tiling manual y en un principio (y todavía) me confundía demasiado con el famoso orden de árbol de i3wm, el estar consciente en todo momento de cuál será el orden de la siguiente ventana, cuál es padre, cuál es hijo, cual es parte de cual contenedor, etc., es confuso. Tuve que ver un <a href="https://www.youtube.com/watch?v=AWA8Pl57UBY">video del autor de i3wm</a> para medio entender como funciona lo de los contenedores.</p>
+</div>
+<div class="paragraph">
+<p>Una vez superado ese obstáculo, sway (y por extensión, i3) se vuelven bastante interesantes y poderosos. Puedo poner algunas ventanas en pestañas (lo que en dwm hacía con el layout <code>deck</code>, pero aquí tiene esteroides) y organizar mis ventanas en maneras mucho más poderosas que con los layouts predefinidos de dwm. Sí, es más trabajo y necesito estar más al pendiente de como se están acomodando mis ventanas, pero no está del todo tan mal.</p>
+</div>
+<div class="sect2">
+<h3 id="_lo_que_funciona_lo_que_no_funciona_y_lo_que_funciona_más_o_menos">Lo que funciona, lo que no funciona, y lo que funciona más o menos</h3>
+<div class="paragraph">
+<p>Como mencioné, el otro obstáculo que me he topado es encontrar alternativas a aplicaciones que usaba normalmente y que no funcionan o no funcionan bien en Wayland. La mayoría como alacritty, firefox, LibreOffice, incluso aplicaciones Electron como Spotify o Geogebra funcionan sin problemas. Otras definitivamente no funcionan ya que dependen de X11, y algunas más funcionan más o menos y solo algunas características o funciones fallan.</p>
+</div>
+<div class="paragraph">
+<p>En la siguiente tabla recupero información sobre varias de esas aplicaciones, necesarias la mayoría para tener un entorno básico.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table Aplicaciones</caption>
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3334%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Aplicación en X11</th>
+<th class="tableblock halign-left valign-top">Aplicación en Wayland</th>
+<th class="tableblock halign-left valign-top">Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dmenu, rofi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bmenu, wofi, <a href="https://aur.archlinux.org/packages/rofi-lbonn-wayland-git/">rofi parchado</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">La versión normal de <code>rofi</code>, así como <code>dmenu</code>, se ejecutan en Wayland bajo Xwayland y pueden traer problemas, por ejemplo, <code>dmenu</code> no roba el foco como lo hace en X</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dunst (gestor de notificaciones)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mako</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Polybar, dzen2, i3bar, lemonbar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">waybar, swaybar</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gcolor2, Gcolor3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grim -g &#34;$(slurp -p)&#34; -t ppm - | convert - -format &#39;%[pixel:p{0,0}]&#39; txt:- | tail -n 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requiere tener instalado <code>grim</code>, <code>slurp</code> y <code>ImageMagick</code>. Los selectores de color de aplicaciones como GIMP no funcionan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lxappearance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gsettings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dado que ya tenía mis configuraciones GTK en <code>~/.config/gtk-3.0/settings.ini</code> usé el script que viene en <a href="https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#setting-values-in-gsettings">la wiki de sway</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ffmpeg, obs, simplescreenrecorder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wf-recorder, obs+wlrobs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No hay forma de grabar aplicaciones independientes todavía por la manera en la que funciona Wayland. Usando <code>wf-recorder</code> junto con <code>v4l2loopback</code> logré proyectar mi pantalla en Zoom como una cámara secundaria.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scrot, flameshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grim, grim+slurp, grimshot, swappy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tanto <code>grimshot</code> como <code>swappy</code> son combinaciones de <code>grim</code> y <code>slurp</code> con algunos añadidos extra.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aplicaciones nativas de X (xrandr, xsetroot, xmodmap, etc.)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No hay o las maneja directamente el compositor</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Una lista con más aplicaciones se puede encontrar <a href="https://github.com/swaywm/sway/wiki/i3-Migration-Guide">aquí</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_el_futuro_de_wayland">El futuro de Wayland</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Por el momento, Wayland y Sway son utilizables. No obstante hay varias molestias acerca de Wayland que no todos aceptarán, ya sea porque están muy acostumbrados a determinado <em>workflow</em> o porque las requieren, como la grabación de pantalla, la falta de modularidad, la poca interoperatibilidad entre compositores y la falta de un estándar, entre otras. Pensé en escribir un poco sobre esto, pero <a href="https://kirby.kevinson.org/blog/things-wrong-with-wayland/">Kriby Kevinson ya lo hizo</a>, les recomiendo leer su blog.</p>
+</div>
+<div class="paragraph">
+<p>Personalmente me preocupa el hecho que GNOME y KDE parecen estar utilizando sus propios protocolos, lo que obliga a usar las aplicaciones nativas de esos entornos o usar sus protocolos si queremos nuestros programas que funcionen con ellos. Esto provocaría que con los compositores independientes como Sway no funcionen muchas aplicaciones, o que los desarrolladores tengan que decidir si hacer su programa compatible con <code>wl-roots</code>, GNOME o Plasma, y probablemente ganen los últimos dos. En consecuencia, se cumpliría la profecía que leí en /g/: Wayland sería el final de los window managers independientes y Linux solo funcionaría con Entornos de Escritorios completos. Espero en verdad que eso no pase y se estandaricen protocolos que todos puedan usar como lo hace X11.</p>
+</div>
+<div class="paragraph">
+<p>Por mientras disfrutaré lo posible de Sway. No se si vuelva a X11 y dwm pronto. Si me topo con algún problema que me impida hacer mi trabajo lo haré, si no, creo que me mantendré aquí. ¿Quién sabe? ¡Quizá mi experiencia ayude a moldear el futuro del escritorio en Linux!</p>
+</div>
+<div class="paragraph">
+<p>Finalmente, una captura de pantalla, por el tema del <code>rice</code></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="sway.png" alt="sway"/>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	  <div> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>  Juan Castro |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a>  
+	    
+	    
+	
+		| <a href="https://juan-blog.github.io/en/posts/sway/">Read in english</a>
+	
+
+	  </div>
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>
